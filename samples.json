@@ -1,0 +1,1502 @@
+[
+  {
+    "id": 0,
+    "key": "home_gpt4o_2283_sad_verse",
+    "emotion": "sad",
+    "text": "Did you just say you're leaving tomorrow? That's... Sooner than i thought.",
+    "style_prompt": "Speak with a Sad emotion. Specifically, insert a pause after 'just', stress the word 'say', insert a pause after 'That's', and stress the word 'Sooner'.",
+    "raw_audio": "audio/raw/home_gpt4o_2283_sad_verse.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_2283_sad_verse.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_2283_sad_verse.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_2283_sad_verse.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_2283_sad_verse.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_2283_sad_verse.wav"
+    }
+  },
+  {
+    "id": 1,
+    "key": "home_gpt4o_21344_disgusted_verse",
+    "emotion": "disgusted",
+    "text": "No one cleaned the bathroom again? It's appalling!",
+    "style_prompt": "Speak with a Disgusted emotion. Specifically, stress the word 'No', insert a pause after 'again', fix the stress of appalling, and stress the word 'appalling'.",
+    "raw_audio": "audio/raw/home_gpt4o_21344_disgusted_verse.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_21344_disgusted_verse.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_21344_disgusted_verse.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_21344_disgusted_verse.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_21344_disgusted_verse.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_21344_disgusted_verse.wav"
+    }
+  },
+  {
+    "id": 2,
+    "key": "home_gpt4o_23576_fearful_sage",
+    "emotion": "fearful",
+    "text": "I’ve told you a thousand times! How many more before you listen?",
+    "style_prompt": "Speak with a Fearful emotion. Specifically, stress the word 'thousand', insert a pause after 'times', stress the word 'more', and stress the word 'listen'.",
+    "raw_audio": "audio/raw/home_gpt4o_23576_fearful_sage.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_23576_fearful_sage.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_23576_fearful_sage.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_23576_fearful_sage.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_23576_fearful_sage.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_23576_fearful_sage.wav"
+    }
+  },
+  {
+    "id": 3,
+    "key": "home_gpt4o_20270_surprised_ash",
+    "emotion": "surprised",
+    "text": "This little bookshop—i didn't know it was still around!",
+    "style_prompt": "Speak with a Surprised emotion. Specifically, insert a pause after 'bookshop', stress the word 'i', and stress the word 'didn't'.",
+    "raw_audio": "audio/raw/home_gpt4o_20270_surprised_ash.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_20270_surprised_ash.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_20270_surprised_ash.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_20270_surprised_ash.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_20270_surprised_ash.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_20270_surprised_ash.wav"
+    }
+  },
+  {
+    "id": 4,
+    "key": "home_gpt4o_22508_fearful_verse",
+    "emotion": "fearful",
+    "text": "The darkness outside is so thick, it feels like it's watching.",
+    "style_prompt": "Speak with a Fearful emotion. Specifically, stress the word 'darkness', stress the word 'so', insert a pause after 'thick', and stress the word 'watching'.",
+    "raw_audio": "audio/raw/home_gpt4o_22508_fearful_verse.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_22508_fearful_verse.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_22508_fearful_verse.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_22508_fearful_verse.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_22508_fearful_verse.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_22508_fearful_verse.wav"
+    }
+  },
+  {
+    "id": 5,
+    "key": "home_gpt4o_21276_disgusted_verse",
+    "emotion": "disgusted",
+    "text": "The trash bag ripped, spilling a rancid liquid that clings to your shoes.",
+    "style_prompt": "Speak with a Disgusted emotion. Specifically, stress the word 'trash', insert a pause after 'ripped', stress the word 'rancid', and stress the word 'clings'.",
+    "raw_audio": "audio/raw/home_gpt4o_21276_disgusted_verse.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_21276_disgusted_verse.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_21276_disgusted_verse.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_21276_disgusted_verse.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_21276_disgusted_verse.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_21276_disgusted_verse.wav"
+    }
+  },
+  {
+    "id": 6,
+    "key": "home_gpt4o_7395_angry_ash",
+    "emotion": "angry",
+    "text": "How could you forget something so important, again?",
+    "style_prompt": "Speak with a Angry emotion. Specifically, stress the word 'How', stress the word 'forget', stress the word 'important', and insert a pause after 'important'.",
+    "raw_audio": "audio/raw/home_gpt4o_7395_angry_ash.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_7395_angry_ash.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_7395_angry_ash.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_7395_angry_ash.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_7395_angry_ash.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_7395_angry_ash.wav"
+    }
+  },
+  {
+    "id": 7,
+    "key": "home_gpt4o_21969_disgusted_coral",
+    "emotion": "disgusted",
+    "text": "How can you eat that? It looks absolutely vile.",
+    "style_prompt": "Speak with a Disgusted emotion. Specifically, stress the word 'eat', insert a pause after 'that', fix the stress of absolutely, and stress the word 'vile'.",
+    "raw_audio": "audio/raw/home_gpt4o_21969_disgusted_coral.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_21969_disgusted_coral.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_21969_disgusted_coral.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_21969_disgusted_coral.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_21969_disgusted_coral.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_21969_disgusted_coral.wav"
+    }
+  },
+  {
+    "id": 8,
+    "key": "home_gpt4o_17682_happy_ash",
+    "emotion": "happy",
+    "text": "The aroma of fresh pastries pulled her in, a smile widening with anticipation.",
+    "style_prompt": "Speak with a Happy emotion. Specifically, stress the word 'aroma', stress the word 'fresh', insert a pause after 'in', stress the word 'widening', and stress the word 'anticipation'.",
+    "raw_audio": "audio/raw/home_gpt4o_17682_happy_ash.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_17682_happy_ash.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_17682_happy_ash.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_17682_happy_ash.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_17682_happy_ash.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_17682_happy_ash.wav"
+    }
+  },
+  {
+    "id": 9,
+    "key": "home_gpt4o_18201_happy_coral",
+    "emotion": "happy",
+    "text": "I saw him smiling like a kid who just discovered a hidden candy stash.",
+    "style_prompt": "Speak with a Happy emotion. Specifically, stress the word 'smiling', stress the word 'just', stress the word 'candy', and stress the word 'stash'.",
+    "raw_audio": "audio/raw/home_gpt4o_18201_happy_coral.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_18201_happy_coral.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_18201_happy_coral.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_18201_happy_coral.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_18201_happy_coral.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_18201_happy_coral.wav"
+    }
+  },
+  {
+    "id": 10,
+    "key": "home_gpt4o_20281_surprised_ash",
+    "emotion": "surprised",
+    "text": "You bought a car without telling me first? That's... A bit unexpected.",
+    "style_prompt": "Speak with a Surprised emotion. Specifically, stress the word 'bought', stress the word 'first?', and insert a pause after 'That's...'.",
+    "raw_audio": "audio/raw/home_gpt4o_20281_surprised_ash.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_20281_surprised_ash.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_20281_surprised_ash.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_20281_surprised_ash.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_20281_surprised_ash.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_20281_surprised_ash.wav"
+    }
+  },
+  {
+    "id": 11,
+    "key": "home_gpt4o_16808_angry_coral",
+    "emotion": "angry",
+    "text": "Your silence is deafening; it's like a slap you can't deny.",
+    "style_prompt": "Speak with a Angry emotion. Specifically, stress the word 'silence', insert a pause after 'deafening', stress the word 'slap', and stress the word 'can't'.",
+    "raw_audio": "audio/raw/home_gpt4o_16808_angry_coral.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_16808_angry_coral.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_16808_angry_coral.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_16808_angry_coral.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_16808_angry_coral.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_16808_angry_coral.wav"
+    }
+  },
+  {
+    "id": 12,
+    "key": "home_gpt4o_20981_surprised_sage",
+    "emotion": "surprised",
+    "text": "You always find a way to ruin everything.",
+    "style_prompt": "Speak with a Surprised emotion. Specifically, stress the word 'always', insert a pause after 'always', stress the word 'ruin', and stress the word 'everything'.",
+    "raw_audio": "audio/raw/home_gpt4o_20981_surprised_sage.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_20981_surprised_sage.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_20981_surprised_sage.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_20981_surprised_sage.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_20981_surprised_sage.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_20981_surprised_sage.wav"
+    }
+  },
+  {
+    "id": 13,
+    "key": "home_gpt4o_875_angry_coral",
+    "emotion": "angry",
+    "text": "How can you be so inefficient more often than not?",
+    "style_prompt": "Speak with a Angry emotion. Specifically, stress the word 'be', stress the word 'inefficient', and insert a pause after 'inefficient'.",
+    "raw_audio": "audio/raw/home_gpt4o_875_angry_coral.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_875_angry_coral.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_875_angry_coral.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_875_angry_coral.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_875_angry_coral.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_875_angry_coral.wav"
+    }
+  },
+  {
+    "id": 14,
+    "key": "home_gpt4o_11168_surprised_ash",
+    "emotion": "surprised",
+    "text": "You never told me you could sing that well!",
+    "style_prompt": "Speak with a Surprised emotion. Specifically, stress the word 'You', stress the word 'that', and insert a pause after 'well'.",
+    "raw_audio": "audio/raw/home_gpt4o_11168_surprised_ash.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_11168_surprised_ash.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_11168_surprised_ash.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_11168_surprised_ash.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_11168_surprised_ash.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_11168_surprised_ash.wav"
+    }
+  },
+  {
+    "id": 15,
+    "key": "home_gpt4o_8360_happy_verse",
+    "emotion": "happy",
+    "text": "Golden sunlight danced over the rippling blue waves, painting everything in shades of joy.",
+    "style_prompt": "Speak with a Happy emotion. Specifically, stress the word 'Golden', stress the word 'danced', insert a pause after 'waves', and stress the word 'joy'.",
+    "raw_audio": "audio/raw/home_gpt4o_8360_happy_verse.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_8360_happy_verse.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_8360_happy_verse.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_8360_happy_verse.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_8360_happy_verse.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_8360_happy_verse.wav"
+    }
+  },
+  {
+    "id": 16,
+    "key": "home_gpt4o_23458_fearful_sage",
+    "emotion": "fearful",
+    "text": "Did you hear that scream? It sounded close.",
+    "style_prompt": "Speak with a Fearful emotion. Specifically, stress the word 'Did', stress the word 'that', stress the word 'scream', and stress the word 'close'.",
+    "raw_audio": "audio/raw/home_gpt4o_23458_fearful_sage.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_23458_fearful_sage.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_23458_fearful_sage.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_23458_fearful_sage.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_23458_fearful_sage.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_23458_fearful_sage.wav"
+    }
+  },
+  {
+    "id": 17,
+    "key": "home_gpt4o_21186_disgusted_verse",
+    "emotion": "disgusted",
+    "text": "You still left the trash there? It's disgusting, truly. Beyond words!",
+    "style_prompt": "Speak with a Disgusted emotion. Specifically, stress the word 'still', insert a pause after 'there?', stress the word 'disgusting,', insert a pause after 'truly.', and stress the word 'words!'.",
+    "raw_audio": "audio/raw/home_gpt4o_21186_disgusted_verse.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_21186_disgusted_verse.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_21186_disgusted_verse.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_21186_disgusted_verse.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_21186_disgusted_verse.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_21186_disgusted_verse.wav"
+    }
+  },
+  {
+    "id": 18,
+    "key": "home_gpt4o_1268_happy_verse",
+    "emotion": "happy",
+    "text": "A day spent laughing with friends is a day well spent.",
+    "style_prompt": "Speak with a Happy emotion. Specifically, stress the word 'laughing', insert a pause after 'friends', and stress the word 'well'.",
+    "raw_audio": "audio/raw/home_gpt4o_1268_happy_verse.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_1268_happy_verse.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_1268_happy_verse.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_1268_happy_verse.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_1268_happy_verse.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_1268_happy_verse.wav"
+    }
+  },
+  {
+    "id": 19,
+    "key": "home_gpt4o_1396_happy_ash",
+    "emotion": "happy",
+    "text": "Her reunion with the ocean was all laughter and sea spray.",
+    "style_prompt": "Speak with a Happy emotion. Specifically, stress the word 'Her', stress the word 'reunion', insert a pause after 'ocean', and stress the word 'laughter'.",
+    "raw_audio": "audio/raw/home_gpt4o_1396_happy_ash.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_1396_happy_ash.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_1396_happy_ash.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_1396_happy_ash.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_1396_happy_ash.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_1396_happy_ash.wav"
+    }
+  },
+  {
+    "id": 20,
+    "key": "home_gpt4o_7093_angry_verse",
+    "emotion": "angry",
+    "text": "It’s not that hard—why is it still not done?",
+    "style_prompt": "Speak with a Angry emotion. Specifically, stress the word 'not', stress the word 'that', and stress the word 'still'.",
+    "raw_audio": "audio/raw/home_gpt4o_7093_angry_verse.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_7093_angry_verse.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_7093_angry_verse.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_7093_angry_verse.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_7093_angry_verse.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_7093_angry_verse.wav"
+    }
+  },
+  {
+    "id": 21,
+    "key": "home_gpt4o_18682_sad_verse",
+    "emotion": "sad",
+    "text": "She stared at the empty room, its silence echoing with the ghosts of laughter long gone.",
+    "style_prompt": "Speak with a Sad emotion. Specifically, stress the word 'stared', insert a pause after 'stared', insert a pause after 'room', stress the word 'silence', and insert a pause after 'laughter'.",
+    "raw_audio": "audio/raw/home_gpt4o_18682_sad_verse.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_18682_sad_verse.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_18682_sad_verse.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_18682_sad_verse.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_18682_sad_verse.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_18682_sad_verse.wav"
+    }
+  },
+  {
+    "id": 22,
+    "key": "home_gpt4o_5645_fearful_coral",
+    "emotion": "fearful",
+    "text": "Dark shadows flickered, making ordinary objects hideous.",
+    "style_prompt": "Speak with a Fearful emotion. Specifically, stress the word 'Dark', insert a pause after 'shadows', insert a pause after 'flickered', and stress the word 'hideous'.",
+    "raw_audio": "audio/raw/home_gpt4o_5645_fearful_coral.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_5645_fearful_coral.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_5645_fearful_coral.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_5645_fearful_coral.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_5645_fearful_coral.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_5645_fearful_coral.wav"
+    }
+  },
+  {
+    "id": 23,
+    "key": "home_gpt4o_7317_angry_ash",
+    "emotion": "angry",
+    "text": "What part of 'no' do you not understand? I've said it repeatedly!",
+    "style_prompt": "Speak with a Angry emotion. Specifically, stress the word 'no', stress the word 'not', stress the word 'understand', stress the word 'said', and stress the word 'repeatedly'.",
+    "raw_audio": "audio/raw/home_gpt4o_7317_angry_ash.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_7317_angry_ash.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_7317_angry_ash.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_7317_angry_ash.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_7317_angry_ash.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_7317_angry_ash.wav"
+    }
+  },
+  {
+    "id": 24,
+    "key": "home_gpt4o_17484_happy_verse",
+    "emotion": "happy",
+    "text": "The child’s eyes sparkled as she discovered the hidden world beneath the leaf.",
+    "style_prompt": "Speak with a Happy emotion. Specifically, stress the word 'sparkled', insert a pause after 'sparkled', stress the word 'discovered', and stress the word 'hidden'.",
+    "raw_audio": "audio/raw/home_gpt4o_17484_happy_verse.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_17484_happy_verse.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_17484_happy_verse.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_17484_happy_verse.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_17484_happy_verse.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_17484_happy_verse.wav"
+    }
+  },
+  {
+    "id": 25,
+    "key": "home_gpt4o_21308_disgusted_verse",
+    "emotion": "disgusted",
+    "text": "His tone dripped with disdain, like oil slick on water.",
+    "style_prompt": "Speak with a Disgusted emotion. Specifically, insert a pause after 'tone', stress the word 'dripped', stress the word 'disdain', and stress the word 'oil'.",
+    "raw_audio": "audio/raw/home_gpt4o_21308_disgusted_verse.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_21308_disgusted_verse.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_21308_disgusted_verse.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_21308_disgusted_verse.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_21308_disgusted_verse.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_21308_disgusted_verse.wav"
+    }
+  },
+  {
+    "id": 26,
+    "key": "home_gpt4o_18544_sad_verse",
+    "emotion": "sad",
+    "text": "You promised everything would be okay, yet here we are, no closer to mending the rift.",
+    "style_prompt": "Speak with a Sad emotion. Specifically, stress the word 'promised', insert a pause after 'promised', insert a pause after 'okay', insert a pause after 'are', and stress the word 'rift'.",
+    "raw_audio": "audio/raw/home_gpt4o_18544_sad_verse.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_18544_sad_verse.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_18544_sad_verse.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_18544_sad_verse.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_18544_sad_verse.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_18544_sad_verse.wav"
+    }
+  },
+  {
+    "id": 27,
+    "key": "home_gpt4o_9543_sad_verse",
+    "emotion": "sad",
+    "text": "I know i messed up, but please don't leave—please.",
+    "style_prompt": "Speak with a Sad emotion. Specifically, stress the word 'i', insert a pause after 'up', stress the word 'please', and insert a pause after 'leave'.",
+    "raw_audio": "audio/raw/home_gpt4o_9543_sad_verse.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_9543_sad_verse.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_9543_sad_verse.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_9543_sad_verse.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_9543_sad_verse.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_9543_sad_verse.wav"
+    }
+  },
+  {
+    "id": 28,
+    "key": "home_gpt4o_22619_fearful_ash",
+    "emotion": "fearful",
+    "text": "Could we have taken a wrong turn? This doesn't feel right at all.",
+    "style_prompt": "Speak with a Fearful emotion. Specifically, stress the word 'Could', insert a pause after 'turn', stress the word 'doesn't', stress the word 'right', and insert a pause after 'right'.",
+    "raw_audio": "audio/raw/home_gpt4o_22619_fearful_ash.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_22619_fearful_ash.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_22619_fearful_ash.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_22619_fearful_ash.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_22619_fearful_ash.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_22619_fearful_ash.wav"
+    }
+  },
+  {
+    "id": 29,
+    "key": "home_gpt4o_2390_sad_ash",
+    "emotion": "sad",
+    "text": "The echoes faded, leaving nothing but the whisper of my sigh.",
+    "style_prompt": "Speak with a Sad emotion. Specifically, stress the word 'echoes', insert a pause after 'faded', stress the word 'nothing', stress the word 'whisper', and stress the word 'sigh'.",
+    "raw_audio": "audio/raw/home_gpt4o_2390_sad_ash.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_2390_sad_ash.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_2390_sad_ash.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_2390_sad_ash.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_2390_sad_ash.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_2390_sad_ash.wav"
+    }
+  },
+  {
+    "id": 30,
+    "key": "home_gpt4o_19981_surprised_verse",
+    "emotion": "surprised",
+    "text": "What? You never told me you were coming today!",
+    "style_prompt": "Speak with a Surprised emotion. Specifically, stress the word 'What?', insert a pause after 'What?', stress the word 'never', and stress the word 'coming'.",
+    "raw_audio": "audio/raw/home_gpt4o_19981_surprised_verse.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_19981_surprised_verse.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_19981_surprised_verse.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_19981_surprised_verse.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_19981_surprised_verse.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_19981_surprised_verse.wav"
+    }
+  },
+  {
+    "id": 31,
+    "key": "home_gpt4o_18890_sad_ash",
+    "emotion": "sad",
+    "text": "His painting sat unfinished, colors bleeding into one another like fading memories.",
+    "style_prompt": "Speak with a Sad emotion. Specifically, stress the word 'painting', insert a pause after 'unfinished', stress the word 'colors', and insert a pause after 'another'.",
+    "raw_audio": "audio/raw/home_gpt4o_18890_sad_ash.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_18890_sad_ash.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_18890_sad_ash.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_18890_sad_ash.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_18890_sad_ash.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_18890_sad_ash.wav"
+    }
+  },
+  {
+    "id": 32,
+    "key": "home_gpt4o_2349_sad_ash",
+    "emotion": "sad",
+    "text": "Raindrops meandered down the pane, like tears on forgotten cheeks.",
+    "style_prompt": "Speak with a Sad emotion. Specifically, stress the word 'Raindrops', stress the word 'meandered', insert a pause after 'pane', and stress the word 'forgotten'.",
+    "raw_audio": "audio/raw/home_gpt4o_2349_sad_ash.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_2349_sad_ash.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_2349_sad_ash.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_2349_sad_ash.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_2349_sad_ash.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_2349_sad_ash.wav"
+    }
+  },
+  {
+    "id": 33,
+    "key": "home_gpt4o_21172_disgusted_verse",
+    "emotion": "disgusted",
+    "text": "The sight was grotesque, a twisted parody of what it should be.",
+    "style_prompt": "Speak with a Disgusted emotion. Specifically, stress the word 'sight', stress the word 'grotesque', stress the word 'twisted', stress the word 'parody', and stress the word 'should'.",
+    "raw_audio": "audio/raw/home_gpt4o_21172_disgusted_verse.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_21172_disgusted_verse.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_21172_disgusted_verse.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_21172_disgusted_verse.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_21172_disgusted_verse.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_21172_disgusted_verse.wav"
+    }
+  },
+  {
+    "id": 34,
+    "key": "home_gpt4o_523_angry_ash",
+    "emotion": "angry",
+    "text": "The car door slammed shut, punctuating the end of the argument.",
+    "style_prompt": "Speak with a Angry emotion. Specifically, stress the word 'slammed', stress the word 'shut', insert a pause after 'shut', and stress the word 'argument'.",
+    "raw_audio": "audio/raw/home_gpt4o_523_angry_ash.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_523_angry_ash.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_523_angry_ash.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_523_angry_ash.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_523_angry_ash.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_523_angry_ash.wav"
+    }
+  },
+  {
+    "id": 35,
+    "key": "home_gpt4o_413_angry_ash",
+    "emotion": "angry",
+    "text": "Yet again, you managed to undermine everything we've built!",
+    "style_prompt": "Speak with a Angry emotion. Specifically, stress the word 'Yet', insert a pause after 'again', stress the word 'undermine', and stress the word 'built'.",
+    "raw_audio": "audio/raw/home_gpt4o_413_angry_ash.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_413_angry_ash.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_413_angry_ash.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_413_angry_ash.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_413_angry_ash.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_413_angry_ash.wav"
+    }
+  },
+  {
+    "id": 36,
+    "key": "home_gpt4o_1754_happy_coral",
+    "emotion": "happy",
+    "text": "The child’s infectious giggle was sunshine in audible form.",
+    "style_prompt": "Speak with a Happy emotion. Specifically, fix the stress of infectious, stress the word 'giggle', stress the word 'sunshine', stress the word 'audible', and insert a pause after 'form'.",
+    "raw_audio": "audio/raw/home_gpt4o_1754_happy_coral.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_1754_happy_coral.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_1754_happy_coral.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_1754_happy_coral.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_1754_happy_coral.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_1754_happy_coral.wav"
+    }
+  },
+  {
+    "id": 37,
+    "key": "home_gpt4o_5133_fearful_verse",
+    "emotion": "fearful",
+    "text": "Her whispers faded into the darkness, uneasy and cryptic.",
+    "style_prompt": "Speak with a Fearful emotion. Specifically, stress the word 'whispers', insert a pause after 'whispers', insert a pause after 'darkness', and stress the word 'uneasy'.",
+    "raw_audio": "audio/raw/home_gpt4o_5133_fearful_verse.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_5133_fearful_verse.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_5133_fearful_verse.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_5133_fearful_verse.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_5133_fearful_verse.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_5133_fearful_verse.wav"
+    }
+  },
+  {
+    "id": 38,
+    "key": "home_gpt4o_445_angry_ash",
+    "emotion": "angry",
+    "text": "Branches cracked viciously as the storm lashed them.",
+    "style_prompt": "Speak with a Angry emotion. Specifically, stress the word 'cracked', stress the word 'viciously', insert a pause after 'viciously', and stress the word 'lashed'.",
+    "raw_audio": "audio/raw/home_gpt4o_445_angry_ash.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_445_angry_ash.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_445_angry_ash.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_445_angry_ash.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_445_angry_ash.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_445_angry_ash.wav"
+    }
+  },
+  {
+    "id": 39,
+    "key": "home_gpt4o_19885_surprised_verse",
+    "emotion": "surprised",
+    "text": "The cat, usually aloof, suddenly curled up in his lap, purring contentedly.",
+    "style_prompt": "Speak with a Surprised emotion. Specifically, stress the word 'cat', insert a pause after 'aloof', stress the word 'suddenly', and fix the stress of contentedly.",
+    "raw_audio": "audio/raw/home_gpt4o_19885_surprised_verse.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_19885_surprised_verse.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_19885_surprised_verse.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_19885_surprised_verse.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_19885_surprised_verse.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_19885_surprised_verse.wav"
+    }
+  },
+  {
+    "id": 40,
+    "key": "home_gpt4o_15805_angry_verse",
+    "emotion": "angry",
+    "text": "Every single time, you ignore what i've been saying to you!",
+    "style_prompt": "Speak with a Angry emotion. Specifically, stress the word 'Every', stress the word 'single', and stress the word 'ignore'.",
+    "raw_audio": "audio/raw/home_gpt4o_15805_angry_verse.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_15805_angry_verse.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_15805_angry_verse.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_15805_angry_verse.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_15805_angry_verse.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_15805_angry_verse.wav"
+    }
+  },
+  {
+    "id": 41,
+    "key": "home_gpt4o_17293_happy_verse",
+    "emotion": "happy",
+    "text": "The little boy triumphantly hugged his teddy bear, his face aglow with happiness.",
+    "style_prompt": "Speak with a Happy emotion. Specifically, stress the word 'little', stress the word 'triumphantly', insert a pause after 'bear,', and stress the word 'aglow'.",
+    "raw_audio": "audio/raw/home_gpt4o_17293_happy_verse.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_17293_happy_verse.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_17293_happy_verse.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_17293_happy_verse.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_17293_happy_verse.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_17293_happy_verse.wav"
+    }
+  },
+  {
+    "id": 42,
+    "key": "home_gpt4o_8404_happy_verse",
+    "emotion": "happy",
+    "text": "Her laughter tumbled out, unexplained but infectious.",
+    "style_prompt": "Speak with a Happy emotion. Specifically, insert a pause after 'out', insert a pause after 'unexplained', stress the word 'but', and stress the word 'infectious'.",
+    "raw_audio": "audio/raw/home_gpt4o_8404_happy_verse.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_8404_happy_verse.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_8404_happy_verse.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_8404_happy_verse.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_8404_happy_verse.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_8404_happy_verse.wav"
+    }
+  },
+  {
+    "id": 43,
+    "key": "home_gpt4o_9957_sad_ash",
+    "emotion": "sad",
+    "text": "Blinds drawn, the room enveloped in a shadow thicker than absence.",
+    "style_prompt": "Speak with a Sad emotion. Specifically, insert a pause after 'drawn', insert a pause after 'enveloped', insert a pause after 'shadow', stress the word 'thicker', and stress the word 'absence'.",
+    "raw_audio": "audio/raw/home_gpt4o_9957_sad_ash.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_9957_sad_ash.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_9957_sad_ash.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_9957_sad_ash.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_9957_sad_ash.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_9957_sad_ash.wav"
+    }
+  },
+  {
+    "id": 44,
+    "key": "home_gpt4o_23208_fearful_coral",
+    "emotion": "fearful",
+    "text": "Dark smoke billowed from the engine as the car refused to start.",
+    "style_prompt": "Speak with a Fearful emotion. Specifically, stress the word 'Dark', insert a pause after 'engine', stress the word 'refused', and stress the word 'start'.",
+    "raw_audio": "audio/raw/home_gpt4o_23208_fearful_coral.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_23208_fearful_coral.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_23208_fearful_coral.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_23208_fearful_coral.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_23208_fearful_coral.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_23208_fearful_coral.wav"
+    }
+  },
+  {
+    "id": 45,
+    "key": "home_gpt4o_8708_happy_ash",
+    "emotion": "happy",
+    "text": "'we're going on vacation!' he announced, grinning from ear to ear with uninhibited joy.",
+    "style_prompt": "Speak with a Happy emotion. Specifically, stress the word 'going', stress the word 'vacation', insert a pause after 'announced', and stress the word 'joy'.",
+    "raw_audio": "audio/raw/home_gpt4o_8708_happy_ash.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_8708_happy_ash.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_8708_happy_ash.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_8708_happy_ash.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_8708_happy_ash.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_8708_happy_ash.wav"
+    }
+  },
+  {
+    "id": 46,
+    "key": "home_gpt4o_21392_disgusted_ash",
+    "emotion": "disgusted",
+    "text": "What is that smell? It’s like something died in here!",
+    "style_prompt": "Speak with a Disgusted emotion. Specifically, stress the word 'is' and stress the word 'died'.",
+    "raw_audio": "audio/raw/home_gpt4o_21392_disgusted_ash.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_21392_disgusted_ash.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_21392_disgusted_ash.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_21392_disgusted_ash.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_21392_disgusted_ash.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_21392_disgusted_ash.wav"
+    }
+  },
+  {
+    "id": 47,
+    "key": "home_gpt4o_5891_fearful_sage",
+    "emotion": "fearful",
+    "text": "There's a palpable silence before the storm hits.",
+    "style_prompt": "Speak with a Fearful emotion. Specifically, stress the word 'palpable', insert a pause after 'silence', and stress the word 'storm'.",
+    "raw_audio": "audio/raw/home_gpt4o_5891_fearful_sage.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_5891_fearful_sage.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_5891_fearful_sage.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_5891_fearful_sage.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_5891_fearful_sage.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_5891_fearful_sage.wav"
+    }
+  },
+  {
+    "id": 48,
+    "key": "home_gpt4o_19427_sad_coral",
+    "emotion": "sad",
+    "text": "She left the door ajar, a cold draft whispering secrets of days gone by.",
+    "style_prompt": "Speak with a Sad emotion. Specifically, insert a pause after 'ajar', stress the word 'draft', and stress the word 'secrets'.",
+    "raw_audio": "audio/raw/home_gpt4o_19427_sad_coral.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_19427_sad_coral.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_19427_sad_coral.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_19427_sad_coral.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_19427_sad_coral.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_19427_sad_coral.wav"
+    }
+  },
+  {
+    "id": 49,
+    "key": "home_gpt4o_9235_happy_coral",
+    "emotion": "happy",
+    "text": "Morning dew sparkled on the grass, diamonds cast by a generous dawn.",
+    "style_prompt": "Speak with a Happy emotion. Specifically, stress the word 'sparkled', insert a pause after 'grass', stress the word 'diamonds', and stress the word 'generous'.",
+    "raw_audio": "audio/raw/home_gpt4o_9235_happy_coral.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_9235_happy_coral.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_9235_happy_coral.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_9235_happy_coral.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_9235_happy_coral.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_9235_happy_coral.wav"
+    }
+  },
+  {
+    "id": 50,
+    "key": "home_gpt4o_14107_fearful_coral",
+    "emotion": "fearful",
+    "text": "Every rustle from the trees seemed to whisper her name.",
+    "style_prompt": "Speak with a Fearful emotion. Specifically, stress the word 'Every', stress the word 'rustle', insert a pause after 'trees', and stress the word 'whisper'.",
+    "raw_audio": "audio/raw/home_gpt4o_14107_fearful_coral.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_14107_fearful_coral.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_14107_fearful_coral.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_14107_fearful_coral.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_14107_fearful_coral.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_14107_fearful_coral.wav"
+    }
+  },
+  {
+    "id": 51,
+    "key": "home_gpt4o_9631_sad_verse",
+    "emotion": "sad",
+    "text": "Each echo in the empty hall reminds me no one's here to listen.",
+    "style_prompt": "Speak with a Sad emotion. Specifically, stress the word 'each', insert a pause after 'hall', stress the word 'reminds', insert a pause after 'me', and stress the word 'no one's'.",
+    "raw_audio": "audio/raw/home_gpt4o_9631_sad_verse.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_9631_sad_verse.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_9631_sad_verse.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_9631_sad_verse.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_9631_sad_verse.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_9631_sad_verse.wav"
+    }
+  },
+  {
+    "id": 52,
+    "key": "home_gpt4o_22200_disgusted_sage",
+    "emotion": "disgusted",
+    "text": "Who leaves old food in their desk? That’s vile!",
+    "style_prompt": "Speak with a Disgusted emotion. Specifically, stress the word 'Who', stress the word 'old', stress the word 'food', insert a pause after 'desk?', and stress the word 'vile!'.",
+    "raw_audio": "audio/raw/home_gpt4o_22200_disgusted_sage.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_22200_disgusted_sage.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_22200_disgusted_sage.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_22200_disgusted_sage.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_22200_disgusted_sage.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_22200_disgusted_sage.wav"
+    }
+  },
+  {
+    "id": 53,
+    "key": "home_gpt4o_4897_disgusted_sage",
+    "emotion": "disgusted",
+    "text": "The silence in the house was heavy after the argument.",
+    "style_prompt": "Speak with a Disgusted emotion. Specifically, stress the word 'silence', insert a pause after 'silence', stress the word 'heavy', and insert a pause after 'heavy'.",
+    "raw_audio": "audio/raw/home_gpt4o_4897_disgusted_sage.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_4897_disgusted_sage.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_4897_disgusted_sage.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_4897_disgusted_sage.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_4897_disgusted_sage.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_4897_disgusted_sage.wav"
+    }
+  },
+  {
+    "id": 54,
+    "key": "home_gpt4o_1743_happy_coral",
+    "emotion": "happy",
+    "text": "Her smile glowed with genuine happiness when she saw the surprise.",
+    "style_prompt": "Speak with a Happy emotion. Specifically, stress the word 'glowed', stress the word 'genuine', stress the word 'happiness', insert a pause after 'happiness', and stress the word 'surprise'.",
+    "raw_audio": "audio/raw/home_gpt4o_1743_happy_coral.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_1743_happy_coral.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_1743_happy_coral.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_1743_happy_coral.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_1743_happy_coral.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_1743_happy_coral.wav"
+    }
+  },
+  {
+    "id": 55,
+    "key": "home_gpt4o_17083_angry_sage",
+    "emotion": "angry",
+    "text": "The air crackled with the tension of a thousand unspoken grievances.",
+    "style_prompt": "Speak with a Angry emotion. Specifically, stress the word 'air', insert a pause after 'crackled', insert a pause after 'tension', stress the word 'thousand', and stress the word 'unspoken'.",
+    "raw_audio": "audio/raw/home_gpt4o_17083_angry_sage.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_17083_angry_sage.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_17083_angry_sage.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_17083_angry_sage.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_17083_angry_sage.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_17083_angry_sage.wav"
+    }
+  },
+  {
+    "id": 56,
+    "key": "home_gpt4o_9966_sad_ash",
+    "emotion": "sad",
+    "text": "The letter slipped from his grasp, a paper cut of bitter news.",
+    "style_prompt": "Speak with a Sad emotion. Specifically, stress the word 'slipped', insert a pause after 'grasp', and stress the word 'bitter'.",
+    "raw_audio": "audio/raw/home_gpt4o_9966_sad_ash.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_9966_sad_ash.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_9966_sad_ash.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_9966_sad_ash.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_9966_sad_ash.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_9966_sad_ash.wav"
+    }
+  },
+  {
+    "id": 57,
+    "key": "home_gpt4o_16087_angry_verse",
+    "emotion": "angry",
+    "text": "So i’m supposed to just forget what you did and move on?",
+    "style_prompt": "Speak with a Angry emotion. Specifically, stress the word 'So', stress the word 'forget', stress the word 'did', and stress the word 'move'.",
+    "raw_audio": "audio/raw/home_gpt4o_16087_angry_verse.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_16087_angry_verse.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_16087_angry_verse.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_16087_angry_verse.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_16087_angry_verse.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_16087_angry_verse.wav"
+    }
+  },
+  {
+    "id": 58,
+    "key": "home_gpt4o_8374_happy_verse",
+    "emotion": "happy",
+    "text": "Every leaf seemed to glisten with newfound life, echoing the vibrant happiness in her heart.",
+    "style_prompt": "Speak with a Happy emotion. Specifically, stress the word 'Every', insert a pause after 'leaf', fix the stress of newfound, stress the word 'vibrant', and insert a pause after 'happiness'.",
+    "raw_audio": "audio/raw/home_gpt4o_8374_happy_verse.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_8374_happy_verse.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_8374_happy_verse.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_8374_happy_verse.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_8374_happy_verse.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_8374_happy_verse.wav"
+    }
+  },
+  {
+    "id": 59,
+    "key": "home_gpt4o_16368_angry_ash",
+    "emotion": "angry",
+    "text": "The sun’s harsh glare glinted off the metal, uncompromising and relentless.",
+    "style_prompt": "Speak with a Angry emotion. Specifically, stress the word 'sun’s', stress the word 'harsh', insert a pause after 'metal', stress the word 'uncompromising', and stress the word 'relentless'.",
+    "raw_audio": "audio/raw/home_gpt4o_16368_angry_ash.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_16368_angry_ash.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_16368_angry_ash.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_16368_angry_ash.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_16368_angry_ash.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_16368_angry_ash.wav"
+    }
+  },
+  {
+    "id": 60,
+    "key": "home_gpt4o_3855_surprised_sage",
+    "emotion": "surprised",
+    "text": "A seemingly regular path led to an unexpected magnificent waterfall.",
+    "style_prompt": "Speak with a Surprised emotion. Specifically, stress the word 'seemingly', stress the word 'unexpected', fix the stress of magnificent, and insert a pause after 'waterfall'.",
+    "raw_audio": "audio/raw/home_gpt4o_3855_surprised_sage.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_3855_surprised_sage.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_3855_surprised_sage.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_3855_surprised_sage.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_3855_surprised_sage.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_3855_surprised_sage.wav"
+    }
+  },
+  {
+    "id": 61,
+    "key": "home_gpt4o_13581_fearful_ash",
+    "emotion": "fearful",
+    "text": "Did you hear that noise just now? It's coming from the attic.",
+    "style_prompt": "Speak with a Fearful emotion. Specifically, stress the word 'Did', stress the word 'noise', insert a pause after 'noise', stress the word 'coming', and stress the word 'attic'.",
+    "raw_audio": "audio/raw/home_gpt4o_13581_fearful_ash.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_13581_fearful_ash.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_13581_fearful_ash.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_13581_fearful_ash.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_13581_fearful_ash.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_13581_fearful_ash.wav"
+    }
+  },
+  {
+    "id": 62,
+    "key": "home_gpt4o_9971_sad_ash",
+    "emotion": "sad",
+    "text": "What more do i have to explain before you finally get it?",
+    "style_prompt": "Speak with a Sad emotion. Specifically, stress the word 'more', stress the word 'explain', insert a pause after 'explain', stress the word 'before', and stress the word 'finally'.",
+    "raw_audio": "audio/raw/home_gpt4o_9971_sad_ash.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_9971_sad_ash.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_9971_sad_ash.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_9971_sad_ash.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_9971_sad_ash.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_9971_sad_ash.wav"
+    }
+  },
+  {
+    "id": 63,
+    "key": "home_gpt4o_11881_surprised_sage",
+    "emotion": "surprised",
+    "text": "You mean to say everyone was in on this?",
+    "style_prompt": "Speak with a Surprised emotion. Specifically, stress the word 'You', insert a pause after 'say', stress the word 'everyone', and stress the word 'this'.",
+    "raw_audio": "audio/raw/home_gpt4o_11881_surprised_sage.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_11881_surprised_sage.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_11881_surprised_sage.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_11881_surprised_sage.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_11881_surprised_sage.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_11881_surprised_sage.wav"
+    }
+  },
+  {
+    "id": 64,
+    "key": "home_gpt4o_14121_fearful_coral",
+    "emotion": "fearful",
+    "text": "I've told you 100 times—don't open the door at night.",
+    "style_prompt": "Speak with a Fearful emotion. Specifically, stress the word '100', insert a pause after 'times', stress the word 'don't', and stress the word 'night'.",
+    "raw_audio": "audio/raw/home_gpt4o_14121_fearful_coral.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_14121_fearful_coral.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_14121_fearful_coral.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_14121_fearful_coral.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_14121_fearful_coral.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_14121_fearful_coral.wav"
+    }
+  },
+  {
+    "id": 65,
+    "key": "home_gpt4o_1366_happy_ash",
+    "emotion": "happy",
+    "text": "The sun dipped below the horizon, leaving a sky blushing with promise.",
+    "style_prompt": "Speak with a Happy emotion. Specifically, stress the word 'dipped', insert a pause after 'horizon,', stress the word 'blushing', and stress the word 'promise.'.",
+    "raw_audio": "audio/raw/home_gpt4o_1366_happy_ash.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_1366_happy_ash.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_1366_happy_ash.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_1366_happy_ash.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_1366_happy_ash.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_1366_happy_ash.wav"
+    }
+  },
+  {
+    "id": 66,
+    "key": "home_gpt4o_12346_disgusted_ash",
+    "emotion": "disgusted",
+    "text": "Is the trash supposed to walk itself out to the curb?",
+    "style_prompt": "Speak with a Disgusted emotion. Specifically, stress the word 'trash', insert a pause after 'trash', stress the word 'walk', and stress the word 'itself'.",
+    "raw_audio": "audio/raw/home_gpt4o_12346_disgusted_ash.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_12346_disgusted_ash.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_12346_disgusted_ash.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_12346_disgusted_ash.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_12346_disgusted_ash.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_12346_disgusted_ash.wav"
+    }
+  },
+  {
+    "id": 67,
+    "key": "home_gpt4o_21567_disgusted_ash",
+    "emotion": "disgusted",
+    "text": "The stench from the garbage strewn across the alley was suffocating.",
+    "style_prompt": "Speak with a Disgusted emotion. Specifically, stress the word 'stench', stress the word 'garbage', insert a pause after 'alley', and stress the word 'suffocating'.",
+    "raw_audio": "audio/raw/home_gpt4o_21567_disgusted_ash.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_21567_disgusted_ash.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_21567_disgusted_ash.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_21567_disgusted_ash.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_21567_disgusted_ash.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_21567_disgusted_ash.wav"
+    }
+  },
+  {
+    "id": 68,
+    "key": "home_gpt4o_8450_happy_verse",
+    "emotion": "happy",
+    "text": "The aroma of fresh-baked bread enveloped her, a welcoming embrace of warmth.",
+    "style_prompt": "Speak with a Happy emotion. Specifically, stress the word 'aroma', fix the stress of enveloped, insert a pause after 'her,', and stress the word 'welcoming'.",
+    "raw_audio": "audio/raw/home_gpt4o_8450_happy_verse.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_8450_happy_verse.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_8450_happy_verse.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_8450_happy_verse.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_8450_happy_verse.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_8450_happy_verse.wav"
+    }
+  },
+  {
+    "id": 69,
+    "key": "home_gpt4o_16917_angry_coral",
+    "emotion": "angry",
+    "text": "Why do you always have to make it so difficult?",
+    "style_prompt": "Speak with a Angry emotion. Specifically, stress the word 'Why', stress the word 'always', stress the word 'so', and stress the word 'difficult'.",
+    "raw_audio": "audio/raw/home_gpt4o_16917_angry_coral.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_16917_angry_coral.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_16917_angry_coral.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_16917_angry_coral.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_16917_angry_coral.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_16917_angry_coral.wav"
+    }
+  },
+  {
+    "id": 70,
+    "key": "home_gpt4o_23177_fearful_coral",
+    "emotion": "fearful",
+    "text": "You checked the basement, right? You would’ve heard... If there was anyone down there?",
+    "style_prompt": "Speak with a Fearful emotion. Specifically, stress the word 'You', insert a pause after 'right?', insert a pause after 'heard...', and stress the word 'anyone'.",
+    "raw_audio": "audio/raw/home_gpt4o_23177_fearful_coral.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_23177_fearful_coral.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_23177_fearful_coral.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_23177_fearful_coral.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_23177_fearful_coral.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_23177_fearful_coral.wav"
+    }
+  },
+  {
+    "id": 71,
+    "key": "home_gpt4o_3644_surprised_coral",
+    "emotion": "surprised",
+    "text": "A rainbow had appeared, vivid and vibrant after the gray storm had passed.",
+    "style_prompt": "Speak with a Surprised emotion. Specifically, stress the word 'rainbow', insert a pause after 'appeared', stress the word 'vivid', insert a pause after 'vibrant', and stress the word 'gray'.",
+    "raw_audio": "audio/raw/home_gpt4o_3644_surprised_coral.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_3644_surprised_coral.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_3644_surprised_coral.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_3644_surprised_coral.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_3644_surprised_coral.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_3644_surprised_coral.wav"
+    }
+  },
+  {
+    "id": 72,
+    "key": "home_gpt4o_10561_sad_sage",
+    "emotion": "sad",
+    "text": "You can talk all you want, but it won’t patch the jagged edges you left behind.",
+    "style_prompt": "Speak with a Sad emotion. Specifically, stress the word 'talk', insert a pause after 'want', stress the word 'won’t', and stress the word 'jagged'.",
+    "raw_audio": "audio/raw/home_gpt4o_10561_sad_sage.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_10561_sad_sage.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_10561_sad_sage.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_10561_sad_sage.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_10561_sad_sage.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_10561_sad_sage.wav"
+    }
+  },
+  {
+    "id": 73,
+    "key": "home_gpt4o_23176_fearful_coral",
+    "emotion": "fearful",
+    "text": "The mirror didn’t just reflect; it seemed to move, like it understood i was watching.",
+    "style_prompt": "Speak with a Fearful emotion. Specifically, stress the word 'mirror', insert a pause after 'just', stress the word 'reflect', stress the word 'understood', and stress the word 'watching'.",
+    "raw_audio": "audio/raw/home_gpt4o_23176_fearful_coral.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_23176_fearful_coral.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_23176_fearful_coral.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_23176_fearful_coral.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_23176_fearful_coral.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_23176_fearful_coral.wav"
+    }
+  },
+  {
+    "id": 74,
+    "key": "home_gpt4o_11208_surprised_ash",
+    "emotion": "surprised",
+    "text": "The clock struck twelve and the birdsong transitioned to an eerie call.",
+    "style_prompt": "Speak with a Surprised emotion. Specifically, insert a pause after 'twelve', fix the stress of birdsong, stress the word 'transitioned', and stress the word 'eerie'.",
+    "raw_audio": "audio/raw/home_gpt4o_11208_surprised_ash.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_11208_surprised_ash.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_11208_surprised_ash.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_11208_surprised_ash.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_11208_surprised_ash.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_11208_surprised_ash.wav"
+    }
+  },
+  {
+    "id": 75,
+    "key": "home_gpt4o_3953_surprised_sage",
+    "emotion": "surprised",
+    "text": "Stray cat wandered aimlessly through rain-drenched alley.",
+    "style_prompt": "Speak with a Surprised emotion. Specifically, stress the word 'stray', insert a pause after 'cat', insert a pause after 'aimlessly', and stress the word 'rain-drenched'.",
+    "raw_audio": "audio/raw/home_gpt4o_3953_surprised_sage.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_3953_surprised_sage.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_3953_surprised_sage.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_3953_surprised_sage.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_3953_surprised_sage.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_3953_surprised_sage.wav"
+    }
+  },
+  {
+    "id": 76,
+    "key": "home_gpt4o_5271_fearful_ash",
+    "emotion": "fearful",
+    "text": "The abandoned house stands, ominous and silent, yet oddly alive.",
+    "style_prompt": "Speak with a Fearful emotion. Specifically, stress the word 'abandoned', insert a pause after 'stands', insert a pause after 'silent', insert a pause after 'oddly', and stress the word 'alive'.",
+    "raw_audio": "audio/raw/home_gpt4o_5271_fearful_ash.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_5271_fearful_ash.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_5271_fearful_ash.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_5271_fearful_ash.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_5271_fearful_ash.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_5271_fearful_ash.wav"
+    }
+  },
+  {
+    "id": 77,
+    "key": "home_gpt4o_18990_sad_ash",
+    "emotion": "sad",
+    "text": "The streets are quiet now, kissed by rain, every droplet a tear shed silently.",
+    "style_prompt": "Speak with a Sad emotion. Specifically, insert a pause after 'streets', insert a pause after 'rain', insert a pause after 'droplet', and stress the word 'tear'.",
+    "raw_audio": "audio/raw/home_gpt4o_18990_sad_ash.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_18990_sad_ash.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_18990_sad_ash.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_18990_sad_ash.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_18990_sad_ash.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_18990_sad_ash.wav"
+    }
+  },
+  {
+    "id": 78,
+    "key": "home_gpt4o_500_angry_ash",
+    "emotion": "angry",
+    "text": "Why do i have to repeat everything ten times?",
+    "style_prompt": "Speak with a Angry emotion. Specifically, stress the word 'Why', stress the word 'everything', insert a pause after 'everything', stress the word 'ten', and stress the word 'times'.",
+    "raw_audio": "audio/raw/home_gpt4o_500_angry_ash.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_500_angry_ash.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_500_angry_ash.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_500_angry_ash.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_500_angry_ash.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_500_angry_ash.wav"
+    }
+  },
+  {
+    "id": 79,
+    "key": "home_gpt4o_20263_surprised_ash",
+    "emotion": "surprised",
+    "text": "The wind twisted, scattering red leaves like confetti in a parade.",
+    "style_prompt": "Speak with a Surprised emotion. Specifically, stress the word 'wind', insert a pause after 'twisted,', stress the word 'leaves', and stress the word 'parade.'.",
+    "raw_audio": "audio/raw/home_gpt4o_20263_surprised_ash.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_20263_surprised_ash.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_20263_surprised_ash.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_20263_surprised_ash.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_20263_surprised_ash.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_20263_surprised_ash.wav"
+    }
+  },
+  {
+    "id": 80,
+    "key": "home_gpt4o_12873_disgusted_coral",
+    "emotion": "disgusted",
+    "text": "A moldy, greenish film had settled across the bathroom mirror.",
+    "style_prompt": "Speak with a Disgusted emotion. Specifically, stress the word 'moldy', insert a pause after 'moldy', stress the word 'greenish', stress the word 'film', and stress the word 'bathroom'.",
+    "raw_audio": "audio/raw/home_gpt4o_12873_disgusted_coral.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_12873_disgusted_coral.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_12873_disgusted_coral.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_12873_disgusted_coral.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_12873_disgusted_coral.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_12873_disgusted_coral.wav"
+    }
+  },
+  {
+    "id": 81,
+    "key": "home_gpt4o_4239_disgusted_ash",
+    "emotion": "disgusted",
+    "text": "Zombies would reject that concoction; it’s beyond gross.",
+    "style_prompt": "Speak with a Disgusted emotion. Specifically, stress the word 'Zombies', fix the stress of reject, stress the word 'concoction', stress the word 'beyond', and stress the word 'gross'.",
+    "raw_audio": "audio/raw/home_gpt4o_4239_disgusted_ash.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_4239_disgusted_ash.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_4239_disgusted_ash.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_4239_disgusted_ash.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_4239_disgusted_ash.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_4239_disgusted_ash.wav"
+    }
+  },
+  {
+    "id": 82,
+    "key": "home_gpt4o_22206_disgusted_sage",
+    "emotion": "disgusted",
+    "text": "You expect me to eat this after seeing how it's prepared?",
+    "style_prompt": "Speak with a Disgusted emotion. Specifically, stress the word 'You', stress the word 'this', insert a pause after 'this', and stress the word 'prepared'.",
+    "raw_audio": "audio/raw/home_gpt4o_22206_disgusted_sage.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_22206_disgusted_sage.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_22206_disgusted_sage.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_22206_disgusted_sage.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_22206_disgusted_sage.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_22206_disgusted_sage.wav"
+    }
+  },
+  {
+    "id": 83,
+    "key": "home_gpt4o_22260_disgusted_sage",
+    "emotion": "disgusted",
+    "text": "The milk had soured, a pungent odor seeping through the kitchen.",
+    "style_prompt": "Speak with a Disgusted emotion. Specifically, stress the word 'milk', insert a pause after 'soured', stress the word 'pungent', and stress the word 'odor'.",
+    "raw_audio": "audio/raw/home_gpt4o_22260_disgusted_sage.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_22260_disgusted_sage.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_22260_disgusted_sage.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_22260_disgusted_sage.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_22260_disgusted_sage.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_22260_disgusted_sage.wav"
+    }
+  },
+  {
+    "id": 84,
+    "key": "home_gpt4o_18738_sad_verse",
+    "emotion": "sad",
+    "text": "We built these dreams, brick by brick, only for them to crumble like sand.",
+    "style_prompt": "Speak with a Sad emotion. Specifically, insert a pause after 'dreams', stress the word 'brick', insert a pause after 'brick', and stress the word 'crumble'.",
+    "raw_audio": "audio/raw/home_gpt4o_18738_sad_verse.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_18738_sad_verse.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_18738_sad_verse.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_18738_sad_verse.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_18738_sad_verse.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_18738_sad_verse.wav"
+    }
+  },
+  {
+    "id": 85,
+    "key": "home_gpt4o_1190_happy_verse",
+    "emotion": "happy",
+    "text": "The sound of waves gently crashing brought a sense of tranquility.",
+    "style_prompt": "Speak with a Happy emotion. Specifically, stress the word 'waves', insert a pause after 'crashing', and fix the stress of tranquility.",
+    "raw_audio": "audio/raw/home_gpt4o_1190_happy_verse.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_1190_happy_verse.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_1190_happy_verse.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_1190_happy_verse.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_1190_happy_verse.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_1190_happy_verse.wav"
+    }
+  },
+  {
+    "id": 86,
+    "key": "home_gpt4o_2924_sad_sage",
+    "emotion": "sad",
+    "text": "The rain spatters on the roof, a quiet, mournful rhythm that never ends.",
+    "style_prompt": "Speak with a Sad emotion. Specifically, stress the word 'spatters', insert a pause after 'roof,', stress the word 'mournful', and stress the word 'never'.",
+    "raw_audio": "audio/raw/home_gpt4o_2924_sad_sage.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_2924_sad_sage.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_2924_sad_sage.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_2924_sad_sage.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_2924_sad_sage.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_2924_sad_sage.wav"
+    }
+  },
+  {
+    "id": 87,
+    "key": "home_gpt4o_3908_surprised_sage",
+    "emotion": "surprised",
+    "text": "The colors of the sunset blended into a muted, sorrowful gray.",
+    "style_prompt": "Speak with a Surprised emotion. Specifically, stress the word 'colors', stress the word 'sunset', insert a pause after 'muted', stress the word 'sorrowful', and insert a pause after 'sorrowful'.",
+    "raw_audio": "audio/raw/home_gpt4o_3908_surprised_sage.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_3908_surprised_sage.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_3908_surprised_sage.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_3908_surprised_sage.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_3908_surprised_sage.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_3908_surprised_sage.wav"
+    }
+  },
+  {
+    "id": 88,
+    "key": "home_gpt4o_7952_angry_coral",
+    "emotion": "angry",
+    "text": "Bitter winds howled like they could sense the ire in the air.",
+    "style_prompt": "Speak with a Angry emotion. Specifically, stress the word 'Bitter', stress the word 'howled', insert a pause after 'howled', stress the word 'sense', and stress the word 'ire'.",
+    "raw_audio": "audio/raw/home_gpt4o_7952_angry_coral.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_7952_angry_coral.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_7952_angry_coral.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_7952_angry_coral.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_7952_angry_coral.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_7952_angry_coral.wav"
+    }
+  },
+  {
+    "id": 89,
+    "key": "home_gpt4o_10959_surprised_verse",
+    "emotion": "surprised",
+    "text": "That cloud just spelled my name—how could anyone explain something like that?",
+    "style_prompt": "Speak with a Surprised emotion. Specifically, stress the word 'That', insert a pause after 'name', stress the word 'anyone', and stress the word 'that'.",
+    "raw_audio": "audio/raw/home_gpt4o_10959_surprised_verse.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_10959_surprised_verse.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_10959_surprised_verse.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_10959_surprised_verse.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_10959_surprised_verse.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_10959_surprised_verse.wav"
+    }
+  },
+  {
+    "id": 90,
+    "key": "home_gpt4o_12780_disgusted_coral",
+    "emotion": "disgusted",
+    "text": "The stench of decay settled heavily on his senses, making him wretch involuntarily.",
+    "style_prompt": "Speak with a Disgusted emotion. Specifically, stress the word 'stench', insert a pause after 'decay', stress the word 'heavily', stress the word 'wretch', and fix the stress of involuntarily.",
+    "raw_audio": "audio/raw/home_gpt4o_12780_disgusted_coral.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_12780_disgusted_coral.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_12780_disgusted_coral.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_12780_disgusted_coral.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_12780_disgusted_coral.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_12780_disgusted_coral.wav"
+    }
+  },
+  {
+    "id": 91,
+    "key": "home_gpt4o_10991_surprised_verse",
+    "emotion": "surprised",
+    "text": "The staircase rose endlessly upwards, just appeared out of nowhere.",
+    "style_prompt": "Speak with a Surprised emotion. Specifically, stress the word 'endlessly', insert a pause after 'upwards,', stress the word 'appeared', and stress the word 'nowhere.'.",
+    "raw_audio": "audio/raw/home_gpt4o_10991_surprised_verse.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_10991_surprised_verse.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_10991_surprised_verse.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_10991_surprised_verse.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_10991_surprised_verse.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_10991_surprised_verse.wav"
+    }
+  },
+  {
+    "id": 92,
+    "key": "home_gpt4o_22117_disgusted_coral",
+    "emotion": "disgusted",
+    "text": "The sight of the mold made me gag.",
+    "style_prompt": "Speak with a Disgusted emotion. Specifically, stress the word 'sight', stress the word 'mold', insert a pause after 'mold', insert a pause after 'me', and stress the word 'gag'.",
+    "raw_audio": "audio/raw/home_gpt4o_22117_disgusted_coral.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_22117_disgusted_coral.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_22117_disgusted_coral.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_22117_disgusted_coral.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_22117_disgusted_coral.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_22117_disgusted_coral.wav"
+    }
+  },
+  {
+    "id": 93,
+    "key": "home_gpt4o_5610_fearful_coral",
+    "emotion": "fearful",
+    "text": "The room felt colder than it should, leaving her trembling.",
+    "style_prompt": "Speak with a Fearful emotion. Specifically, stress the word 'colder', insert a pause after 'should', insert a pause after 'her', and stress the word 'trembling'.",
+    "raw_audio": "audio/raw/home_gpt4o_5610_fearful_coral.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_5610_fearful_coral.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_5610_fearful_coral.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_5610_fearful_coral.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_5610_fearful_coral.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_5610_fearful_coral.wav"
+    }
+  },
+  {
+    "id": 94,
+    "key": "home_gpt4o_19864_surprised_verse",
+    "emotion": "surprised",
+    "text": "Wait, you did all this? I'm speechless.",
+    "style_prompt": "Speak with a Surprised emotion. Specifically, insert a pause after 'Wait', stress the word 'you', and stress the word 'speechless'.",
+    "raw_audio": "audio/raw/home_gpt4o_19864_surprised_verse.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_19864_surprised_verse.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_19864_surprised_verse.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_19864_surprised_verse.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_19864_surprised_verse.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_19864_surprised_verse.wav"
+    }
+  },
+  {
+    "id": 95,
+    "key": "home_gpt4o_5672_fearful_coral",
+    "emotion": "fearful",
+    "text": "The dark alley wind whispered tales of forgotten victims.",
+    "style_prompt": "Speak with a Fearful emotion. Specifically, stress the word 'dark', insert a pause after 'wind', stress the word 'whispered', insert a pause after 'tales', and stress the word 'victims'.",
+    "raw_audio": "audio/raw/home_gpt4o_5672_fearful_coral.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_5672_fearful_coral.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_5672_fearful_coral.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_5672_fearful_coral.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_5672_fearful_coral.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_5672_fearful_coral.wav"
+    }
+  },
+  {
+    "id": 96,
+    "key": "home_gpt4o_5064_fearful_verse",
+    "emotion": "fearful",
+    "text": "The creature’s eyes glowed from the underbrush, unyielding and ancient.",
+    "style_prompt": "Speak with a Fearful emotion. Specifically, stress the word 'glowed', insert a pause after 'underbrush', stress the word 'unyielding', and stress the word 'ancient'.",
+    "raw_audio": "audio/raw/home_gpt4o_5064_fearful_verse.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_5064_fearful_verse.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_5064_fearful_verse.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_5064_fearful_verse.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_5064_fearful_verse.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_5064_fearful_verse.wav"
+    }
+  },
+  {
+    "id": 97,
+    "key": "home_gpt4o_16034_angry_verse",
+    "emotion": "angry",
+    "text": "The ocean crashes angrily against the cliffs, relentless and unyielding.",
+    "style_prompt": "Speak with a Angry emotion. Specifically, stress the word 'ocean', stress the word 'angrily', insert a pause after 'cliffs', stress the word 'relentless', and stress the word 'unyielding'.",
+    "raw_audio": "audio/raw/home_gpt4o_16034_angry_verse.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_16034_angry_verse.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_16034_angry_verse.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_16034_angry_verse.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_16034_angry_verse.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_16034_angry_verse.wav"
+    }
+  },
+  {
+    "id": 98,
+    "key": "home_gpt4o_7087_angry_verse",
+    "emotion": "angry",
+    "text": "Why does it always take me yelling for things to get done around here?",
+    "style_prompt": "Speak with a Angry emotion. Specifically, stress the word 'Why', stress the word 'yelling', insert a pause after 'yelling', and stress the word 'done'.",
+    "raw_audio": "audio/raw/home_gpt4o_7087_angry_verse.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_7087_angry_verse.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_7087_angry_verse.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_7087_angry_verse.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_7087_angry_verse.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_7087_angry_verse.wav"
+    }
+  },
+  {
+    "id": 99,
+    "key": "home_gpt4o_17382_happy_verse",
+    "emotion": "happy",
+    "text": "A warm breeze rustles the newly bloomed cherry blossoms—it’s like nature is applauding.",
+    "style_prompt": "Speak with a Happy emotion. Specifically, stress the word 'warm', stress the word 'rustles', insert a pause after 'blossoms', stress the word 'nature', and stress the word 'applauding'.",
+    "raw_audio": "audio/raw/home_gpt4o_17382_happy_verse.wav",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_17382_happy_verse.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_17382_happy_verse.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_17382_happy_verse.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_17382_happy_verse.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_17382_happy_verse.wav"
+    }
+  }
+]

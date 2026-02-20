@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TTS Blind Test - Emotional Speech</title>
+  <style>
+    :root {
+      --bg: #f8f9fa;
+      --card: #ffffff;
+      --border: #dee2e6;
+      --text: #212529;
+      --text-muted: #6c757d;
+      --accent: #4f46e5;
+      --accent-hover: #6366f1;
+      --accent-light: rgba(79,70,229,0.08);
+      --success: #16a34a;
+      --success-light: rgba(22,163,74,0.08);
+      --warning: #d97706;
+      --danger: #dc2626;
+      --radius: 12px;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg); color: var(--text); line-height: 1.6; min-height: 100vh;
+    }
+    .container { max-width: 980px; margin: 0 auto; padding: 20px; }
+
+    /* Header */
+    .header {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 28px 0 20px; border-bottom: 1px solid var(--border); margin-bottom: 28px;
+    }
+    .header-left { text-align: left; }
+    .header-left h1 { font-size: 1.7rem; font-weight: 700; margin-bottom: 4px; }
+    .header-left p { color: var(--text-muted); font-size: 0.92rem; }
+    .lang-switch {
+      display: flex; gap: 0; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; flex-shrink: 0;
+    }
+    .lang-btn {
+      padding: 6px 16px; font-size: 0.85rem; font-weight: 600; cursor: pointer;
+      border: none; background: #fff; color: var(--text-muted); transition: all 0.15s;
+    }
+    .lang-btn.active { background: var(--accent); color: #fff; }
+    .lang-btn:hover:not(.active) { background: #f1f3f5; }
+
+    /* Progress */
+    .progress-wrap { margin-bottom: 28px; }
+    .progress-info { display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 6px; }
+    .progress-bar { width: 100%; height: 6px; background: var(--border); border-radius: 3px; overflow: hidden; }
+    .progress-fill { height: 100%; background: var(--accent); border-radius: 3px; transition: width 0.3s ease; }
+
+    /* Cards */
+    .sample-card {
+      background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
+      padding: 28px; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    }
+    .sample-meta { display: flex; gap: 10px; align-items: center; margin-bottom: 16px; flex-wrap: wrap; }
+    .badge { display: inline-block; padding: 3px 12px; border-radius: 20px; font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+    .badge-emotion { background: var(--accent-light); color: var(--accent); }
+    .badge-id { background: #f1f3f5; color: var(--text-muted); }
+
+    .sample-text {
+      font-size: 1.05rem; padding: 14px 18px; background: #f8f9fa; border-radius: 8px;
+      border-left: 3px solid var(--accent); margin-bottom: 12px;
+    }
+    .style-prompt {
+      font-size: 0.88rem; color: var(--text-muted); margin-bottom: 20px; padding: 8px 12px;
+      background: #fffbeb; border: 1px solid #fde68a; border-radius: 8px; line-height: 1.8;
+    }
+    .hl-stress { background: #dbeafe; color: #1e40af; font-weight: 700; padding: 1px 5px; border-radius: 4px; }
+    .hl-pause { background: #fef3c7; color: #92400e; font-weight: 600; padding: 1px 5px; border-radius: 4px; font-size: 0.82em; }
+
+    /* System blocks */
+    .system-block { border: 1px solid var(--border); border-radius: 10px; margin-bottom: 16px; overflow: hidden; transition: border-color 0.2s; }
+    .system-block.rated { border-color: var(--success); }
+    .system-block-header { display: flex; align-items: center; gap: 16px; padding: 14px 16px; background: #f8f9fa; border-bottom: 1px solid var(--border); }
+    .system-label { font-weight: 700; font-size: 0.95rem; min-width: 80px; color: var(--accent); }
+    .system-audio { flex: 1; min-width: 0; }
+    .system-audio audio { width: 100%; height: 36px; }
+    .rating-dimensions { padding: 12px 16px; display: flex; flex-direction: column; gap: 8px; }
+    .dim-row { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+    .dim-label { min-width: 220px; font-size: 0.84rem; font-weight: 600; color: var(--text-muted); }
+    .dim-rating-group { display: flex; gap: 4px; flex-shrink: 0; }
+    .rating-btn {
+      width: 36px; height: 36px; border: 2px solid var(--border); border-radius: 8px;
+      background: transparent; color: var(--text-muted); font-size: 0.85rem; font-weight: 700;
+      cursor: pointer; transition: all 0.15s; position: relative;
+    }
+    .rating-btn:hover { border-color: var(--accent); color: var(--text); background: var(--accent-light); }
+    .rating-btn.selected { border-color: var(--accent); background: var(--accent); color: #fff; }
+    .rating-btn[title]:hover::after {
+      content: attr(title); position: absolute; bottom: 110%; left: 50%; transform: translateX(-50%);
+      background: #1f2937; color: #fff; padding: 4px 10px; border-radius: 6px; font-size: 0.72rem;
+      font-weight: 400; white-space: nowrap; z-index: 10; pointer-events: none;
+    }
+    .dim-separator { border: none; border-top: 1px dashed #e9ecef; margin: 2px 0; }
+
+    /* Navigation */
+    .nav-row { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-top: 24px; }
+    .btn { padding: 10px 28px; border-radius: 8px; font-size: 0.95rem; font-weight: 600; cursor: pointer; border: none; transition: all 0.15s; }
+    .btn-primary { background: var(--accent); color: #fff; }
+    .btn-primary:hover { background: var(--accent-hover); }
+    .btn-primary:disabled { opacity: 0.4; cursor: not-allowed; }
+    .btn-secondary { background: #fff; color: var(--text); border: 1px solid var(--border); }
+    .btn-secondary:hover { background: #f1f3f5; }
+    .btn-danger { background: #fff; color: var(--danger); border: 1px solid var(--danger); }
+    .btn-danger:hover { background: #fef2f2; }
+    .btn-warning { background: var(--warning); color: #fff; }
+    .btn-warning:hover { background: #b45309; }
+    .nav-hint { font-size: 0.8rem; color: var(--text-muted); }
+
+    /* Instructions */
+    .instructions { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 36px; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
+    .instructions h2 { font-size: 1.3rem; margin-bottom: 20px; }
+    .instructions h3 { font-size: 1rem; margin: 18px 0 8px; color: var(--accent); }
+    .instructions ul { padding-left: 20px; margin-bottom: 20px; }
+    .instructions li { margin-bottom: 10px; color: var(--text-muted); }
+    .instructions li strong { color: var(--text); }
+
+    .scale-table { width: 100%; border-collapse: collapse; margin: 12px 0 20px; }
+    .scale-table th, .scale-table td { padding: 8px 12px; text-align: left; border-bottom: 1px solid var(--border); font-size: 0.85rem; vertical-align: top; }
+    .scale-table th { color: var(--accent); font-weight: 600; background: #f8f9fa; }
+    .scale-table td:first-child { font-weight: 700; text-align: center; min-width: 40px; }
+    .scale-table td:nth-child(2) { font-weight: 600; min-width: 80px; }
+    .example-text { font-size: 0.8rem; color: var(--text-muted); font-style: italic; margin-top: 4px; }
+
+    .input-row { display: flex; gap: 16px; align-items: flex-end; margin-bottom: 24px; flex-wrap: wrap; }
+    .input-group label { display: block; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 6px; }
+    .input-group input { padding: 8px 14px; border-radius: 8px; border: 1px solid var(--border); background: #fff; color: var(--text); font-size: 0.95rem; }
+
+    /* Results */
+    .results-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 36px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
+    .results-card h2 { margin-bottom: 16px; color: var(--success); }
+    .download-btn { display: inline-block; margin: 20px 8px; padding: 12px 32px; background: var(--accent); color: #fff; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 0.95rem; cursor: pointer; border: none; }
+    .download-btn:hover { background: var(--accent-hover); }
+
+    /* Resume banner */
+    .resume-banner { background: #fffbeb; border: 1px solid #fcd34d; border-radius: var(--radius); padding: 20px 24px; margin-bottom: 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+    .resume-banner-text { flex: 1; }
+    .resume-banner-text strong { color: var(--warning); }
+    .resume-banner-text p { font-size: 0.88rem; color: var(--text-muted); margin-top: 4px; }
+    .resume-banner-actions { display: flex; gap: 10px; flex-shrink: 0; }
+
+    /* Save bar & Toast */
+    .save-exit-bar { display: flex; justify-content: flex-end; align-items: center; gap: 12px; margin-bottom: 16px; }
+    .autosave-status { font-size: 0.8rem; color: var(--success); font-weight: 500; }
+    .toast { position: fixed; bottom: 24px; right: 24px; background: var(--text); color: #fff; padding: 12px 20px; border-radius: 8px; font-size: 0.9rem; font-weight: 500; box-shadow: 0 4px 12px rgba(0,0,0,0.15); opacity: 0; transform: translateY(10px); transition: all 0.3s ease; pointer-events: none; z-index: 1000; }
+    .toast.show { opacity: 1; transform: translateY(0); }
+
+    /* Section divider in instructions */
+    .section-divider { border: none; border-top: 2px solid var(--border); margin: 24px 0; }
+
+    @media (max-width: 700px) {
+      .dim-row { flex-wrap: wrap; }
+      .dim-label { min-width: 100%; }
+      .system-block-header { flex-wrap: wrap; }
+      .input-row { flex-direction: column; }
+      .resume-banner { flex-direction: column; text-align: center; }
+      .header { flex-direction: column; gap: 12px; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="header-left">
+        <h1>TTS Blind Test</h1>
+        <p id="header-sub">Emotional Speech Quality Evaluation</p>
+      </div>
+      <div class="lang-switch">
+        <button class="lang-btn active" id="lang-en" onclick="setLang('en')">EN</button>
+        <button class="lang-btn" id="lang-zh" onclick="setLang('zh')">中文</button>
+      </div>
+    </div>
+
+    <!-- Instructions Page -->
+    <div id="page-instructions">
+      <div id="resume-banner" class="resume-banner" style="display:none;">
+        <div class="resume-banner-text">
+          <strong id="t-resume-title">Saved session found!</strong>
+          <p id="resume-info"></p>
+        </div>
+        <div class="resume-banner-actions">
+          <button class="btn btn-warning" onclick="resumeSession()" id="t-resume-btn">Resume</button>
+          <button class="btn btn-danger" onclick="clearSession()" id="t-discard-btn">Discard &amp; Start New</button>
+        </div>
+      </div>
+
+      <div class="instructions" id="instructions-content">
+        <!-- Filled by JS based on language -->
+      </div>
+    </div>
+
+    <!-- Evaluation Page -->
+    <div id="page-eval" style="display:none;">
+      <div class="save-exit-bar">
+        <span class="autosave-status" id="autosave-status"></span>
+        <button class="btn btn-secondary" onclick="saveAndExit()" id="t-save-exit">Save &amp; Exit</button>
+      </div>
+      <div class="progress-wrap">
+        <div class="progress-info">
+          <span id="progress-text">Sample 1 / 100</span>
+          <span id="progress-pct">0%</span>
+        </div>
+        <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
+      </div>
+      <div class="sample-card" id="sample-card"></div>
+      <div class="nav-row">
+        <button class="btn btn-secondary" id="btn-prev" onclick="prevSample()">← Previous</button>
+        <span class="nav-hint" id="nav-hint"></span>
+        <button class="btn btn-primary" id="btn-next" onclick="nextSample()" disabled>Next →</button>
+      </div>
+    </div>
+
+    <!-- Results Page -->
+    <div id="page-results" style="display:none;">
+      <div class="results-card">
+        <h2 id="t-complete">✓ Evaluation Complete!</h2>
+        <p style="color:var(--text-muted); margin-bottom:8px;" id="t-thanks">Thank you for completing the blind test.</p>
+        <p id="results-summary" style="color:var(--text-muted);"></p>
+        <br>
+        <button class="download-btn" onclick="downloadResults()">Download JSON</button>
+        <button class="download-btn" onclick="downloadCSV()" style="background:var(--success);">Download CSV</button>
+      </div>
+    </div>
+  </div>
+  <div class="toast" id="toast"></div>
+
+<script>
+// =============================================
+// I18N
+// =============================================
+let currentLang = "en";
+
+const I18N = {
+  en: {
+    headerSub: "Emotional Speech Quality Evaluation",
+    resumeTitle: "Saved session found!",
+    resumeBtn: "Resume",
+    discardBtn: "Discard & Start New",
+    saveExit: "Save & Exit",
+    complete: "✓ Evaluation Complete!",
+    thanks: "Thank you for completing the blind test.",
+    navHintAll: "Rate all dimensions for all systems to continue",
+    navHintEmpty: "",
+    prev: "← Previous",
+    next: "Next →",
+    finish: "Finish ✓",
+    startBtn: "Start Evaluation",
+    nameLabel: "Evaluator Name (required):",
+    namePh: "Your name",
+    startLabel: "Start from sample #:",
+    endLabel: "End at sample #:",
+    nameAlert: "Please enter your name before starting.",
+    savedToast: "Progress saved! You can close this page safely.",
+    resumedToast: "Session resumed!",
+    discardedToast: "Saved session discarded",
+    dimMos: "MOS (Naturalness)",
+    dimEmotion: "Emotion",
+    dimPause: "Pauses",
+    dimStress: "Stress",
+    instructions: `
+      <h2>Evaluation Instructions</h2>
+      <p style="margin-bottom:16px; color:var(--text-muted);">
+        You will listen to speech samples generated by <strong>5 different TTS systems</strong>.
+        For each sample, rate each system across <strong>2 evaluation categories</strong> on a <strong>1–5 scale</strong>.
+      </p>
+      <p style="margin-bottom:8px; color:var(--text-muted);">
+        In the text display, <span class="hl-stress">stressed words</span> are highlighted in blue, and <span class="hl-pause">⏸ pauses</span> are marked in yellow. Please pay attention to these when evaluating.
+      </p>
+
+      <hr class="section-divider">
+
+      <h3>Category 1: MOS — Naturalness &amp; Audio Quality</h3>
+      <p style="color:var(--text-muted); margin-bottom:8px;">Rate how natural and human-like the speech sounds, regardless of whether instructions are followed.</p>
+      <table class="scale-table">
+        <thead><tr><th>Score</th><th>Level</th><th>Description</th></tr></thead>
+        <tbody>
+          <tr><td>5</td><td>Excellent</td><td>Completely natural, human-like, no artifacts.</td></tr>
+          <tr><td>4</td><td>Good</td><td>Natural, but with very minor artifacts.</td></tr>
+          <tr><td>3</td><td>Fair</td><td>Understandable, but somewhat robotic or buzzy.</td></tr>
+          <tr><td>2</td><td>Poor</td><td>Unnatural, distinct metallic or robotic sounds.</td></tr>
+          <tr><td>1</td><td>Bad</td><td>Completely unnatural, unintelligible artifacts.</td></tr>
+        </tbody>
+      </table>
+
+      <hr class="section-divider">
+
+      <h3>Category 2: Instruction Adherence (Emotion / Pauses / Stress)</h3>
+      <p style="color:var(--text-muted); margin-bottom:8px;">
+        Each of the 3 sub-dimensions is scored <strong>independently</strong>. Focus only on whether the specific instruction for that dimension is followed.
+      </p>
+      <table class="scale-table">
+        <thead><tr><th>Score</th><th>Level</th><th>Description</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>5</td><td>Natural adherence</td>
+            <td>The instruction is fully followed, and the result sounds natural and effortless.
+              <div class="example-text">e.g., Emotion: clearly happy and natural; Pause: pause at the right place with natural timing; Stress: stressed word is emphasized naturally</div></td>
+          </tr>
+          <tr>
+            <td>4</td><td>Followed but slightly unnatural</td>
+            <td>The instruction is followed, but the execution feels slightly exaggerated or mechanical.
+              <div class="example-text">e.g., Emotion: happy but a bit over-acted; Pause: pause is present but slightly too long/short; Stress: word is stressed but sounds a bit forced</div></td>
+          </tr>
+          <tr>
+            <td>3</td><td>Partially followed</td>
+            <td>The instruction is partially followed — some aspects are correct, others are missing or weak.
+              <div class="example-text">e.g., Emotion: somewhat happy but not convincing; Pause: only some pauses are present; Stress: only some words are stressed</div></td>
+          </tr>
+          <tr>
+            <td>2</td><td>Barely followed</td>
+            <td>The instruction is barely perceptible — very weak or mostly missing.
+              <div class="example-text">e.g., Emotion: almost neutral with a faint hint; Pause: barely noticeable pause; Stress: nearly no emphasis detected</div></td>
+          </tr>
+          <tr>
+            <td>1</td><td>Not followed</td>
+            <td>The instruction is completely ignored or contradicted.
+              <div class="example-text">e.g., Emotion: wrong emotion or flat; Pause: no pause at all; Stress: no stress on any marked word</div></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <hr class="section-divider">
+
+      <h3>Tips</h3>
+      <ul>
+        <li>System order is <strong>randomized</strong> for each sample to avoid bias.</li>
+        <li>You must rate <strong>all 4 dimensions for all 5 systems</strong> before moving to the next sample.</li>
+        <li>You can go back to revise previous ratings.</li>
+        <li>Progress is <strong>auto-saved</strong> to your browser. You can close and resume later.</li>
+        <li>Use <strong>Save &amp; Exit</strong> at any time to safely pause your work.</li>
+        <li>Hover over a score button to see a brief description.</li>
+      </ul>
+    `,
+    instructionsZh: null,
+  },
+  zh: {
+    headerSub: "情感语音质量评估",
+    resumeTitle: "发现已保存的会话！",
+    resumeBtn: "继续评测",
+    discardBtn: "丢弃并重新开始",
+    saveExit: "保存并退出",
+    complete: "✓ 评测完成！",
+    thanks: "感谢您完成本次盲测。",
+    navHintAll: "请为所有系统的所有维度评分后继续",
+    navHintEmpty: "",
+    prev: "← 上一条",
+    next: "下一条 →",
+    finish: "完成 ✓",
+    startBtn: "开始评测",
+    nameLabel: "评测者姓名（必填）：",
+    namePh: "请输入姓名",
+    startLabel: "起始样本编号：",
+    endLabel: "结束样本编号：",
+    nameAlert: "请输入姓名后再开始。",
+    savedToast: "进度已保存，可以安全关闭页面。",
+    resumedToast: "会话已恢复！",
+    discardedToast: "已丢弃保存的会话",
+    dimMos: "MOS（自然度）",
+    dimEmotion: "情感遵循",
+    dimPause: "停顿遵循",
+    dimStress: "重音遵循",
+    instructions: `
+      <h2>评测说明</h2>
+      <p style="margin-bottom:16px; color:var(--text-muted);">
+        您将收听 <strong>5 个不同 TTS 系统</strong>生成的语音样本。
+        对每条样本，请在 <strong>2 大评测类别</strong>下按 <strong>1–5 分</strong>进行评分。
+      </p>
+      <p style="margin-bottom:8px; color:var(--text-muted);">
+        在文本展示中，<span class="hl-stress">重读词</span> 以蓝色高亮标记，<span class="hl-pause">⏸ 停顿</span> 以黄色标记。评测时请留意这些标注。
+      </p>
+
+      <hr class="section-divider">
+
+      <h3>类别一：MOS — 自然度与音频质量</h3>
+      <p style="color:var(--text-muted); margin-bottom:8px;">评估语音的自然程度和人类相似度，不考虑指令是否被遵循。</p>
+      <table class="scale-table">
+        <thead><tr><th>分数</th><th>等级</th><th>描述</th></tr></thead>
+        <tbody>
+          <tr><td>5</td><td>优秀</td><td>完全自然，像真人说话，无任何伪影。</td></tr>
+          <tr><td>4</td><td>良好</td><td>自然，但有极轻微的瑕疵。</td></tr>
+          <tr><td>3</td><td>一般</td><td>可理解，但有机器感或杂音。</td></tr>
+          <tr><td>2</td><td>较差</td><td>不自然，有明显的金属音或机器音。</td></tr>
+          <tr><td>1</td><td>极差</td><td>完全不自然，严重的音频崩坏。</td></tr>
+        </tbody>
+      </table>
+
+      <hr class="section-divider">
+
+      <h3>类别二：指令遵循度（情感 / 停顿 / 重音）</h3>
+      <p style="color:var(--text-muted); margin-bottom:8px;">
+        以下 3 个子维度<strong>独立评分</strong>，只需关注该维度的指令是否被遵循。
+      </p>
+      <table class="scale-table">
+        <thead><tr><th>分数</th><th>等级</th><th>描述</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>5</td><td>自然遵循</td>
+            <td>指令被完全遵循，且效果自然、毫不费力。
+              <div class="example-text">例：情感：明显开心且自然；停顿：在正确位置停顿，时长自然；重音：目标词被自然地强调</div></td>
+          </tr>
+          <tr>
+            <td>4</td><td>遵循但略不自然</td>
+            <td>指令被遵循，但执行上略显夸张或机械。
+              <div class="example-text">例：情感：开心但有点用力过猛；停顿：有停顿但略长/略短；重音：有强调但听起来有点生硬</div></td>
+          </tr>
+          <tr>
+            <td>3</td><td>部分遵循</td>
+            <td>指令被部分遵循——部分正确，但有缺失或偏弱。
+              <div class="example-text">例：情感：有点开心但不够有说服力；停顿：只有部分停顿出现；重音：只有部分词被强调</div></td>
+          </tr>
+          <tr>
+            <td>2</td><td>勉强遵循</td>
+            <td>指令几乎不可感知——非常微弱或大部分缺失。
+              <div class="example-text">例：情感：近乎平淡，仅有一丝迹象；停顿：几乎察觉不到停顿；重音：几乎没有感受到强调</div></td>
+          </tr>
+          <tr>
+            <td>1</td><td>未遵循</td>
+            <td>指令被完全忽略或与指令相反。
+              <div class="example-text">例：情感：情感错误或完全平淡；停顿：完全没有停顿；重音：目标词没有任何强调</div></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <hr class="section-divider">
+
+      <h3>注意事项</h3>
+      <ul>
+        <li>每条样本的系统顺序<strong>已随机打乱</strong>，避免偏差。</li>
+        <li>必须为<strong>所有 5 个系统的全部 4 个维度</strong>评分后才能进入下一条。</li>
+        <li>可以返回修改之前的评分。</li>
+        <li>进度<strong>自动保存</strong>到浏览器，可随时关闭页面后继续。</li>
+        <li>随时可使用<strong>「保存并退出」</strong>按钮安全暂停。</li>
+        <li>将鼠标悬停在分数按钮上可查看简要描述。</li>
+      </ul>
+    `,
+  }
+};
+
+// Tooltip text for rating buttons
+const TOOLTIPS = {
+  en: {
+    mos:     { 1:"Bad: Completely unnatural", 2:"Poor: Unnatural, metallic", 3:"Fair: Robotic/buzzy", 4:"Good: Minor artifacts", 5:"Excellent: Perfectly natural" },
+    emotion: { 1:"Not followed", 2:"Barely followed", 3:"Partially followed", 4:"Followed, slightly unnatural", 5:"Natural adherence" },
+    pause:   { 1:"Not followed", 2:"Barely followed", 3:"Partially followed", 4:"Followed, slightly unnatural", 5:"Natural adherence" },
+    stress:  { 1:"Not followed", 2:"Barely followed", 3:"Partially followed", 4:"Followed, slightly unnatural", 5:"Natural adherence" },
+  },
+  zh: {
+    mos:     { 1:"极差：完全不自然", 2:"较差：金属音/机器音", 3:"一般：机器感", 4:"良好：轻微瑕疵", 5:"优秀：完全自然" },
+    emotion: { 1:"未遵循", 2:"勉强遵循", 3:"部分遵循", 4:"遵循但略不自然", 5:"自然遵循" },
+    pause:   { 1:"未遵循", 2:"勉强遵循", 3:"部分遵循", 4:"遵循但略不自然", 5:"自然遵循" },
+    stress:  { 1:"未遵循", 2:"勉强遵循", 3:"部分遵循", 4:"遵循但略不自然", 5:"自然遵循" },
+  }
+};
+
+function setLang(lang) {
+  currentLang = lang;
+  document.getElementById("lang-en").classList.toggle("active", lang === "en");
+  document.getElementById("lang-zh").classList.toggle("active", lang === "zh");
+  updateUI();
+  // Save preference
+  try { localStorage.setItem("tts_blind_test_lang", lang); } catch(e){}
+}
+
+function updateUI() {
+  const t = I18N[currentLang];
+  document.getElementById("header-sub").textContent = t.headerSub;
+  document.getElementById("t-resume-title").textContent = t.resumeTitle;
+  document.getElementById("t-resume-btn").textContent = t.resumeBtn;
+  document.getElementById("t-discard-btn").innerHTML = t.discardBtn;
+  document.getElementById("t-save-exit").innerHTML = t.saveExit;
+  document.getElementById("t-complete").textContent = t.complete;
+  document.getElementById("t-thanks").textContent = t.thanks;
+  document.getElementById("btn-prev").textContent = t.prev;
+
+  // Update instructions page
+  renderInstructions();
+
+  // If on eval page, re-render to update dim labels and tooltips
+  if (samples.length > 0 && document.getElementById("page-eval").style.display !== "none") {
+    renderSample();
+  }
+}
+
+function getDimLabel(key) {
+  const t = I18N[currentLang];
+  const map = { mos: t.dimMos, emotion: t.dimEmotion, pause: t.dimPause, stress: t.dimStress };
+  return map[key] || key;
+}
+
+function renderInstructions() {
+  const t = I18N[currentLang];
+  let html = t.instructions;
+  html += `
+    <div class="input-row" style="margin-top:24px;">
+      <div class="input-group">
+        <label for="evaluator-name">${t.nameLabel}</label>
+        <input type="text" id="evaluator-name" placeholder="${t.namePh}" style="width:220px;" value="${escHtml(evaluatorName)}">
+      </div>
+      <div class="input-group">
+        <label for="start-index">${t.startLabel}</label>
+        <input type="number" id="start-index" min="1" max="100" value="${rangeStart}" style="width:100px;">
+      </div>
+      <div class="input-group">
+        <label for="end-index">${t.endLabel}</label>
+        <input type="number" id="end-index" min="1" max="100" value="${rangeEnd}" style="width:100px;">
+      </div>
+    </div>
+    <button class="btn btn-primary" onclick="startTest()">${t.startBtn}</button>
+  `;
+  document.getElementById("instructions-content").innerHTML = html;
+}
+
+// =============================================
+// DIMENSIONS
+// =============================================
+const DIMENSIONS = [
+  { key: "mos" },
+  { key: "emotion" },
+  { key: "pause" },
+  { key: "stress" },
+];
+
+// =============================================
+// SYSTEM NAME MAPPING (for export)
+// =============================================
+const SYS_NAMES = {
+  sys_A: "CosyVoice2_results_instruct",
+  sys_B: "CosyVoice2_results_instruct_xml",
+  sys_C: "EmoVoice_1.5B_results",
+  sys_D: "instruct_1.5B_woLibriTTS_results",
+  sys_E: "refiner_1.5B_results",
+};
+
+// =============================================
+// STATE
+// =============================================
+const STORAGE_KEY = "tts_blind_test_session";
+let allSamples = [];
+let samples = [];
+let currentIdx = 0;
+let ratings = {};
+let systemOrder = {};
+let evaluatorName = "";
+let rangeStart = 1;
+let rangeEnd = 100;
+
+// =============================================
+// STYLE PROMPT HIGHLIGHTING
+// =============================================
+function highlightPrompt(stylePrompt, text) {
+  // Parse style_prompt to extract stressed words and pause positions
+  const stressWords = [];
+  const pauseAfterWords = [];
+
+  // Match patterns like: stress the word 'X', stress the word 'Y'
+  const stressRegex = /stress(?:\s+the\s+word)?\s+['']([^'']+)['']/gi;
+  let m;
+  while ((m = stressRegex.exec(stylePrompt)) !== null) {
+    stressWords.push(m[1]);
+  }
+  // Also: fix the stress of X
+  const fixStressRegex = /fix\s+the\s+stress\s+of\s+(\w+)/gi;
+  while ((m = fixStressRegex.exec(stylePrompt)) !== null) {
+    stressWords.push(m[1]);
+  }
+
+  // Match patterns like: insert a pause after 'X'
+  const pauseRegex = /insert\s+a\s+pause\s+after\s+['']([^'']+)['']/gi;
+  while ((m = pauseRegex.exec(stylePrompt)) !== null) {
+    pauseAfterWords.push(m[1]);
+  }
+
+  // Now highlight the text
+  let result = escHtml(text);
+
+  // Highlight stress words (case-insensitive, whole word)
+  stressWords.forEach(word => {
+    const escaped = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const re = new RegExp(`\\b(${escaped})\\b`, 'gi');
+    result = result.replace(re, '<span class="hl-stress">$1</span>');
+  });
+
+  // Insert pause markers after specific words
+  pauseAfterWords.forEach(word => {
+    const escaped = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    // Match the word (possibly followed by punctuation) and insert pause after
+    const re = new RegExp(`(\\b${escaped}\\b[.,;:!?…]*)`, 'gi');
+    result = result.replace(re, '$1 <span class="hl-pause">⏸</span>');
+  });
+
+  return result;
+}
+
+// =============================================
+// LOCALSTORAGE
+// =============================================
+function saveToStorage() {
+  const session = { evaluatorName, rangeStart, rangeEnd, currentIdx, ratings, systemOrder, savedAt: new Date().toISOString() };
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(session)); showAutosaveStatus(); } catch(e) { console.warn("save failed:", e); }
+}
+function loadFromStorage() {
+  try { const raw = localStorage.getItem(STORAGE_KEY); return raw ? JSON.parse(raw) : null; } catch(e) { return null; }
+}
+function clearStorage() { localStorage.removeItem(STORAGE_KEY); }
+function showAutosaveStatus() {
+  const el = document.getElementById("autosave-status");
+  if (el) el.textContent = (currentLang === "zh" ? "已自动保存 " : "Auto-saved ") + new Date().toLocaleTimeString();
+}
+
+// =============================================
+// TOAST
+// =============================================
+function showToast(msg, duration = 2500) {
+  const el = document.getElementById("toast");
+  el.textContent = msg; el.classList.add("show");
+  setTimeout(() => el.classList.remove("show"), duration);
+}
+
+// =============================================
+// INIT
+// =============================================
+async function loadSamples() {
+  const resp = await fetch("samples.json");
+  allSamples = await resp.json();
+  console.log(`Loaded ${allSamples.length} samples`);
+
+  // Restore lang preference
+  try { const savedLang = localStorage.getItem("tts_blind_test_lang"); if (savedLang) setLang(savedLang); } catch(e){}
+
+  renderInstructions();
+  checkForSavedSession();
+}
+
+function checkForSavedSession() {
+  const saved = loadFromStorage();
+  if (saved && saved.ratings && Object.keys(saved.ratings).length > 0) {
+    const banner = document.getElementById("resume-banner");
+    const info = document.getElementById("resume-info");
+    const ratedCount = Object.keys(saved.ratings).filter(id => {
+      const r = saved.ratings[id]; return Object.values(r).some(sys => Object.keys(sys).length > 0);
+    }).length;
+    const time = saved.savedAt ? new Date(saved.savedAt).toLocaleString() : "?";
+    if (currentLang === "zh") {
+      info.textContent = `评测者：${saved.evaluatorName || "匿名"} | 范围：#${saved.rangeStart}–#${saved.rangeEnd} | 已评样本：${ratedCount} | 上次保存：${time}`;
+    } else {
+      info.textContent = `Evaluator: ${saved.evaluatorName || "anonymous"} | Range: #${saved.rangeStart}–#${saved.rangeEnd} | Rated: ${ratedCount} | Saved: ${time}`;
+    }
+    banner.style.display = "flex";
+  }
+}
+
+function resumeSession() {
+  const saved = loadFromStorage();
+  if (!saved) return;
+  evaluatorName = saved.evaluatorName || "";
+  rangeStart = saved.rangeStart || 1;
+  rangeEnd = saved.rangeEnd || 100;
+  ratings = saved.ratings || {};
+  systemOrder = saved.systemOrder || {};
+  currentIdx = saved.currentIdx || 0;
+  samples = allSamples.slice(rangeStart - 1, rangeEnd);
+  samples.forEach(s => {
+    if (!systemOrder[s.id]) systemOrder[s.id] = shuffle([...Object.keys(s.systems)]);
+    if (!ratings[s.id]) ratings[s.id] = {};
+  });
+  if (currentIdx >= samples.length) currentIdx = samples.length - 1;
+  if (currentIdx < 0) currentIdx = 0;
+  document.getElementById("page-instructions").style.display = "none";
+  document.getElementById("page-eval").style.display = "block";
+  renderSample();
+  showToast(I18N[currentLang].resumedToast);
+}
+
+function clearSession() {
+  clearStorage();
+  document.getElementById("resume-banner").style.display = "none";
+  showToast(I18N[currentLang].discardedToast);
+}
+
+// =============================================
+// START
+// =============================================
+function startTest() {
+  evaluatorName = document.getElementById("evaluator-name").value.trim();
+  if (!evaluatorName) { alert(I18N[currentLang].nameAlert); document.getElementById("evaluator-name").focus(); return; }
+  rangeStart = parseInt(document.getElementById("start-index").value) || 1;
+  rangeEnd = parseInt(document.getElementById("end-index").value) || 100;
+  rangeStart = Math.max(1, Math.min(rangeStart, allSamples.length));
+  rangeEnd = Math.max(rangeStart, Math.min(rangeEnd, allSamples.length));
+  samples = allSamples.slice(rangeStart - 1, rangeEnd);
+  currentIdx = 0;
+  samples.forEach(s => {
+    if (!systemOrder[s.id]) systemOrder[s.id] = shuffle([...Object.keys(s.systems)]);
+    if (!ratings[s.id]) ratings[s.id] = {};
+  });
+  saveToStorage();
+  document.getElementById("page-instructions").style.display = "none";
+  document.getElementById("page-eval").style.display = "block";
+  renderSample();
+}
+
+function saveAndExit() {
+  saveToStorage();
+  document.getElementById("page-eval").style.display = "none";
+  document.getElementById("page-instructions").style.display = "block";
+  renderInstructions();
+  checkForSavedSession();
+  showToast(I18N[currentLang].savedToast);
+}
+
+// =============================================
+// SHUFFLE
+// =============================================
+function shuffle(arr) {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+// =============================================
+// RATING LOGIC
+// =============================================
+function isSampleFullyRated(sampleId) {
+  const s = samples.find(x => x.id == sampleId);
+  if (!s) return false;
+  const r = ratings[sampleId] || {};
+  return Object.keys(s.systems).every(sys => {
+    const sysR = r[sys]; if (!sysR) return false;
+    return DIMENSIONS.every(d => sysR[d.key] !== undefined);
+  });
+}
+function isSystemFullyRated(sampleId, sysId) {
+  const sysR = (ratings[sampleId] || {})[sysId];
+  if (!sysR) return false;
+  return DIMENSIONS.every(d => sysR[d.key] !== undefined);
+}
+
+// =============================================
+// RENDER
+// =============================================
+function renderSample() {
+  const t = I18N[currentLang];
+  const s = samples[currentIdx];
+  const order = systemOrder[s.id];
+  const done = samples.filter(x => isSampleFullyRated(x.id)).length;
+
+  document.getElementById("progress-text").textContent =
+    (currentLang === "zh" ? `样本 ${currentIdx+1} / ${samples.length}（总第 ${s.id+1} 条）` : `Sample ${currentIdx+1} / ${samples.length} (# ${s.id+1} overall)`);
+  document.getElementById("progress-pct").textContent = `${Math.round(done / samples.length * 100)}%`;
+  document.getElementById("progress-fill").style.width = `${done / samples.length * 100}%`;
+
+  const highlightedText = highlightPrompt(s.style_prompt, s.text);
+
+  let html = `
+    <div class="sample-meta">
+      <span class="badge badge-id">#${s.id + 1}</span>
+      <span class="badge badge-emotion">${s.emotion}</span>
+    </div>
+    <div class="sample-text">${highlightedText}</div>
+    <div class="style-prompt">${escHtml(s.style_prompt)}</div>
+  `;
+
+  // Reference audio (raw_wav - neutral emotion)
+  if (s.raw_audio) {
+    const refLabel = currentLang === "zh" ? "🔊 参考音频（中立情绪原始音频）" : "🔊 Reference Audio (Neutral Emotion)";
+    html += `
+      <div style="margin-bottom:20px; padding:12px 16px; background:#f0fdf4; border:1px solid #bbf7d0; border-radius:10px;">
+        <div style="font-weight:700; font-size:0.9rem; color:#15803d; margin-bottom:8px;">${refLabel}</div>
+        <audio controls preload="none" src="${s.raw_audio}" style="width:100%; height:36px;"></audio>
+      </div>
+    `;
+  }
+
+  const tips = TOOLTIPS[currentLang];
+
+  order.forEach((sysId, i) => {
+    const label = `System ${i + 1}`;
+    const audioSrc = s.systems[sysId];
+    const sysRated = isSystemFullyRated(s.id, sysId);
+    const sysR = (ratings[s.id] || {})[sysId] || {};
+
+    html += `
+      <div class="system-block ${sysRated ? 'rated' : ''}" id="block-${sysId}">
+        <div class="system-block-header">
+          <span class="system-label">${label}</span>
+          <div class="system-audio"><audio controls preload="none" src="${audioSrc}"></audio></div>
+        </div>
+        <div class="rating-dimensions">
+    `;
+
+    DIMENSIONS.forEach((dim, di) => {
+      if (di > 0) html += `<hr class="dim-separator">`;
+      const currentVal = sysR[dim.key];
+      const dimTips = tips[dim.key] || {};
+      html += `
+          <div class="dim-row">
+            <span class="dim-label">${getDimLabel(dim.key)}</span>
+            <div class="dim-rating-group">
+              ${[1,2,3,4,5].map(score => `
+                <button class="rating-btn ${currentVal === score ? 'selected' : ''}"
+                  title="${dimTips[score] || ''}"
+                  onclick="rate(${s.id}, '${sysId}', '${dim.key}', ${score}, this)">${score}</button>
+              `).join("")}
+            </div>
+          </div>
+      `;
+    });
+
+    html += `</div></div>`;
+  });
+
+  document.getElementById("sample-card").innerHTML = html;
+  document.getElementById("btn-prev").disabled = currentIdx === 0;
+  document.getElementById("btn-prev").textContent = t.prev;
+  updateNextBtn();
+}
+
+function rate(sampleId, sysId, dimKey, score, btn) {
+  if (!ratings[sampleId]) ratings[sampleId] = {};
+  if (!ratings[sampleId][sysId]) ratings[sampleId][sysId] = {};
+  ratings[sampleId][sysId][dimKey] = score;
+  const row = btn.closest(".dim-row");
+  row.querySelectorAll(".rating-btn").forEach(b => b.classList.remove("selected"));
+  btn.classList.add("selected");
+  const block = document.getElementById(`block-${sysId}`);
+  if (isSystemFullyRated(sampleId, sysId)) block.classList.add("rated");
+  updateNextBtn();
+  saveToStorage();
+}
+
+function updateNextBtn() {
+  const t = I18N[currentLang];
+  const s = samples[currentIdx];
+  const allRated = isSampleFullyRated(s.id);
+  const btn = document.getElementById("btn-next");
+  const hint = document.getElementById("nav-hint");
+  btn.disabled = !allRated;
+  btn.textContent = (currentIdx === samples.length - 1 && allRated) ? t.finish : t.next;
+  hint.textContent = allRated ? t.navHintEmpty : t.navHintAll;
+  const done = samples.filter(x => isSampleFullyRated(x.id)).length;
+  document.getElementById("progress-pct").textContent = `${Math.round(done / samples.length * 100)}%`;
+  document.getElementById("progress-fill").style.width = `${done / samples.length * 100}%`;
+}
+
+// =============================================
+// NAVIGATION
+// =============================================
+function nextSample() {
+  saveToStorage();
+  if (currentIdx < samples.length - 1) { currentIdx++; renderSample(); window.scrollTo({ top: 0, behavior: "smooth" }); }
+  else showResults();
+}
+function prevSample() {
+  saveToStorage();
+  if (currentIdx > 0) { currentIdx--; renderSample(); window.scrollTo({ top: 0, behavior: "smooth" }); }
+}
+
+// =============================================
+// RESULTS
+// =============================================
+function showResults() {
+  document.getElementById("page-eval").style.display = "none";
+  document.getElementById("page-results").style.display = "block";
+  const sysAvg = {};
+  samples.forEach(s => {
+    const r = ratings[s.id]; if (!r) return;
+    for (const [sys, dims] of Object.entries(r)) {
+      const name = SYS_NAMES[sys] || sys;
+      if (!sysAvg[name]) sysAvg[name] = {};
+      for (const [dim, score] of Object.entries(dims)) {
+        if (!sysAvg[name][dim]) sysAvg[name][dim] = { total: 0, count: 0 };
+        sysAvg[name][dim].total += score; sysAvg[name][dim].count += 1;
+      }
+    }
+  });
+  const label = currentLang === "zh" ? "各系统平均分" : "Average Scores per System";
+  let summaryHtml = `<br><strong>${label} (#${rangeStart}–#${rangeEnd}):</strong><br><br>`;
+  Object.keys(sysAvg).sort().forEach(sys => {
+    summaryHtml += `<strong>${sys}</strong>: `;
+    summaryHtml += DIMENSIONS.map(d => {
+      const info = sysAvg[sys][d.key]; if (!info) return `${getDimLabel(d.key)}=N/A`;
+      return `${getDimLabel(d.key)}=${(info.total / info.count).toFixed(2)}`;
+    }).join(", ") + `<br>`;
+  });
+  document.getElementById("results-summary").innerHTML = summaryHtml;
+  clearStorage();
+}
+
+// =============================================
+// DOWNLOAD
+// =============================================
+function buildResultsData() {
+  return {
+    evaluator: evaluatorName, timestamp: new Date().toISOString(),
+    range: { start: rangeStart, end: rangeEnd }, total_samples: samples.length,
+    dimensions: DIMENSIONS.map(d => d.key),
+    ratings: samples.map(s => {
+      const scores = {};
+      const raw = ratings[s.id] || {};
+      for (const [sysId, dims] of Object.entries(raw)) {
+        scores[SYS_NAMES[sysId] || sysId] = dims;
+      }
+      return { id: s.id, key: s.key, emotion: s.emotion, text: s.text, scores };
+    }),
+  };
+}
+function downloadResults() {
+  const data = buildResultsData();
+  const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a"); a.href = url;
+  a.download = `blind_test_${evaluatorName || "anon"}_${rangeStart}-${rangeEnd}_${Date.now()}.json`;
+  a.click(); URL.revokeObjectURL(url);
+}
+function downloadCSV() {
+  const data = buildResultsData();
+  const sysIds = [...new Set(data.ratings.flatMap(r => Object.keys(r.scores)))].sort();
+  const dimKeys = DIMENSIONS.map(d => d.key);
+  const colHeaders = sysIds.flatMap(sys => dimKeys.map(dim => `${sys}_${dim}`));
+  let csv = `evaluator,sample_id,key,emotion,${colHeaders.join(",")}\n`;
+  data.ratings.forEach(r => {
+    const vals = sysIds.flatMap(sys => { const sc = r.scores[sys] || {}; return dimKeys.map(dim => sc[dim] !== undefined ? sc[dim] : ""); });
+    csv += `"${evaluatorName}",${r.id},"${r.key}","${r.emotion}",${vals.join(",")}\n`;
+  });
+  const blob = new Blob([csv], { type: "text/csv" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a"); a.href = url;
+  a.download = `blind_test_${evaluatorName || "anon"}_${rangeStart}-${rangeEnd}_${Date.now()}.csv`;
+  a.click(); URL.revokeObjectURL(url);
+}
+
+// =============================================
+// UTILITY
+// =============================================
+function escHtml(text) { const div = document.createElement("div"); div.textContent = text; return div.innerHTML; }
+
+// =============================================
+// BOOT
+// =============================================
+loadSamples();
+</script>
+</body>
+</html>
