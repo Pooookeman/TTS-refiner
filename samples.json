@@ -1,0 +1,562 @@
+[
+  {
+    "id": 0,
+    "key": "home_gpt4o_7317_angry_ash",
+    "emotion": "angry",
+    "text": "What part of 'no' do you not understand? I've said it repeatedly!",
+    "style_prompt": "Speak with a Angry emotion at a moderate speed and high pitch. Specifically, stress the word 'no', stress the word 'repeatedly', and insert a pause after 'understand'.",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_7317_angry_ash.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_7317_angry_ash.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_7317_angry_ash.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_7317_angry_ash.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_7317_angry_ash.wav"
+    }
+  },
+  {
+    "id": 1,
+    "key": "home_gpt4o_16281_angry_ash",
+    "emotion": "angry",
+    "text": "You can't just walk in without knocking! Respect other people's space.",
+    "style_prompt": "Speak with a Angry emotion at a moderate speed and moderate pitch. Specifically, stress the word 'can't', stress the word 'Respect', and insert a pause after 'knocking'.",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_16281_angry_ash.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_16281_angry_ash.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_16281_angry_ash.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_16281_angry_ash.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_16281_angry_ash.wav"
+    }
+  },
+  {
+    "id": 2,
+    "key": "home_gpt4o_5064_fearful_verse",
+    "emotion": "fearful",
+    "text": "The creature’s eyes glowed from the underbrush, unyielding and ancient.",
+    "style_prompt": "Speak with a Fearful emotion at a fast speed and moderate pitch. Specifically, stress the word 'glowed', stress the word 'unyielding', and insert a pause after 'underbrush'.",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_5064_fearful_verse.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_5064_fearful_verse.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_5064_fearful_verse.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_5064_fearful_verse.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_5064_fearful_verse.wav"
+    }
+  },
+  {
+    "id": 3,
+    "key": "home_gpt4o_4644_disgusted_coral",
+    "emotion": "disgusted",
+    "text": "Grease congealed on the cold plate, like a slug stopped mid-trail.",
+    "style_prompt": "Speak with a Disgusted emotion at a slow speed and low pitch. Specifically, stress the word 'congealed', stress the word 'slug', and insert a pause after 'plate'.",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_4644_disgusted_coral.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_4644_disgusted_coral.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_4644_disgusted_coral.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_4644_disgusted_coral.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_4644_disgusted_coral.wav"
+    }
+  },
+  {
+    "id": 4,
+    "key": "home_gpt4o_23576_fearful_sage",
+    "emotion": "fearful",
+    "text": "I’ve told you a thousand times! How many more before you listen?",
+    "style_prompt": "Speak with a Fearful emotion at a fast speed and moderate pitch. Specifically, stress the word 'thousand', stress the word 'listen', and insert a pause after 'times'.",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_23576_fearful_sage.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_23576_fearful_sage.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_23576_fearful_sage.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_23576_fearful_sage.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_23576_fearful_sage.wav"
+    }
+  },
+  {
+    "id": 5,
+    "key": "home_gpt4o_22206_disgusted_sage",
+    "emotion": "disgusted",
+    "text": "You expect me to eat this after seeing how it's prepared?",
+    "style_prompt": "Speak with a Disgusted emotion at a moderate speed and low pitch. Specifically, stress the word 'eat', stress the word 'prepared', and insert a pause after 'this'.",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_22206_disgusted_sage.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_22206_disgusted_sage.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_22206_disgusted_sage.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_22206_disgusted_sage.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_22206_disgusted_sage.wav"
+    }
+  },
+  {
+    "id": 6,
+    "key": "home_gpt4o_10858_surprised_verse",
+    "emotion": "surprised",
+    "text": "And suddenly, without a warning, the statue's eyes blinked slowly.",
+    "style_prompt": "Speak with a Surprised emotion at a fast speed and high pitch. Specifically, stress the word 'suddenly', stress the word 'blinked', and insert a pause after 'warning'.",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_10858_surprised_verse.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_10858_surprised_verse.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_10858_surprised_verse.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_10858_surprised_verse.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_10858_surprised_verse.wav"
+    }
+  },
+  {
+    "id": 7,
+    "key": "home_gpt4o_15777_angry_verse",
+    "emotion": "angry",
+    "text": "Traffic droned like a rolling grumble, blanketing the city in annoyance.",
+    "style_prompt": "Speak with a Angry emotion at a moderate speed and high pitch. Specifically, stress the word 'droned', stress the word 'annoyance', and insert a pause after 'grumble'.",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_15777_angry_verse.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_15777_angry_verse.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_15777_angry_verse.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_15777_angry_verse.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_15777_angry_verse.wav"
+    }
+  },
+  {
+    "id": 8,
+    "key": "home_gpt4o_10959_surprised_verse",
+    "emotion": "surprised",
+    "text": "That cloud just spelled my name—how could anyone explain something like that?",
+    "style_prompt": "Speak with a Surprised emotion at a moderate speed and moderate pitch. Specifically, stress the word 'spelled', stress the word 'explain', and insert a pause after 'name'.",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_10959_surprised_verse.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_10959_surprised_verse.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_10959_surprised_verse.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_10959_surprised_verse.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_10959_surprised_verse.wav"
+    }
+  },
+  {
+    "id": 9,
+    "key": "home_gpt4o_4046_disgusted_verse",
+    "emotion": "disgusted",
+    "text": "Every fork was encrusted, as if dipped in a sorrowful chocolate shell.",
+    "style_prompt": "Speak with a Disgusted emotion at a moderate speed and low pitch. Specifically, stress the word 'encrusted', stress the word 'sorrowful', and insert a pause after 'fork'.",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_4046_disgusted_verse.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_4046_disgusted_verse.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_4046_disgusted_verse.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_4046_disgusted_verse.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_4046_disgusted_verse.wav"
+    }
+  },
+  {
+    "id": 10,
+    "key": "home_gpt4o_21276_disgusted_verse",
+    "emotion": "disgusted",
+    "text": "The trash bag ripped, spilling a rancid liquid that clings to your shoes.",
+    "style_prompt": "Speak with a Disgusted emotion at a moderate speed and moderate pitch. Specifically, stress the word 'ripped', stress the word 'rancid', and stress the word 'clings'.",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_21276_disgusted_verse.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_21276_disgusted_verse.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_21276_disgusted_verse.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_21276_disgusted_verse.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_21276_disgusted_verse.wav"
+    }
+  },
+  {
+    "id": 11,
+    "key": "home_gpt4o_9538_sad_verse",
+    "emotion": "sad",
+    "text": "Each word felt like a burden, each sentence choked back, heavy with unshed tears.",
+    "style_prompt": "Speak with a Sad emotion at a slow speed and moderate pitch. Specifically, stress the word 'burden', stress the word 'heavy', and insert a pause after 'back'.",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_9538_sad_verse.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_9538_sad_verse.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_9538_sad_verse.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_9538_sad_verse.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_9538_sad_verse.wav"
+    }
+  },
+  {
+    "id": 12,
+    "key": "home_gpt4o_20281_surprised_ash",
+    "emotion": "surprised",
+    "text": "You bought a car without telling me first? That's... A bit unexpected.",
+    "style_prompt": "Speak with a Surprised emotion at a moderate speed and high pitch. Specifically, stress the word 'car', stress the word 'unexpected', and insert a pause after 'first'.",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_20281_surprised_ash.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_20281_surprised_ash.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_20281_surprised_ash.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_20281_surprised_ash.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_20281_surprised_ash.wav"
+    }
+  },
+  {
+    "id": 13,
+    "key": "home_gpt4o_7973_angry_sage",
+    "emotion": "angry",
+    "text": "Paint peeled off the wall, stress lines like a permanent frown etched into the surface.",
+    "style_prompt": "Speak with a Angry emotion at a fast speed and high pitch. Specifically, stress the word 'peeled', stress the word 'permanent', and stress the word 'frown'.",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_7973_angry_sage.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_7973_angry_sage.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_7973_angry_sage.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_7973_angry_sage.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_7973_angry_sage.wav"
+    }
+  },
+  {
+    "id": 14,
+    "key": "home_gpt4o_2349_sad_ash",
+    "emotion": "sad",
+    "text": "Raindrops meandered down the pane, like tears on forgotten cheeks.",
+    "style_prompt": "Speak with a Sad emotion at a slow speed and low pitch. Specifically, stress the word 'meandered', stress the word 'tears', and insert a pause after 'pane'.",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_2349_sad_ash.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_2349_sad_ash.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_2349_sad_ash.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_2349_sad_ash.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_2349_sad_ash.wav"
+    }
+  },
+  {
+    "id": 15,
+    "key": "home_gpt4o_18738_sad_verse",
+    "emotion": "sad",
+    "text": "We built these dreams, brick by brick, only for them to crumble like sand.",
+    "style_prompt": "Speak with a Sad emotion at a moderate speed and moderate pitch. Specifically, stress the word 'dreams', stress the word 'crumble', and insert a pause after 'brick'.",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_18738_sad_verse.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_18738_sad_verse.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_18738_sad_verse.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_18738_sad_verse.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_18738_sad_verse.wav"
+    }
+  },
+  {
+    "id": 16,
+    "key": "home_gpt4o_2283_sad_verse",
+    "emotion": "sad",
+    "text": "Did you just say you're leaving tomorrow? That's... Sooner than i thought.",
+    "style_prompt": "Speak with a Sad emotion at a slow speed and low pitch. Specifically, stress the word 'leaving', stress the word 'sooner', and insert a pause after 'tomorrow'.",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_2283_sad_verse.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_2283_sad_verse.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_2283_sad_verse.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_2283_sad_verse.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_2283_sad_verse.wav"
+    }
+  },
+  {
+    "id": 17,
+    "key": "home_gpt4o_19427_sad_coral",
+    "emotion": "sad",
+    "text": "She left the door ajar, a cold draft whispering secrets of days gone by.",
+    "style_prompt": "Speak with a Sad emotion at a moderate speed and low pitch. Specifically, stress the word 'ajar', stress the word 'whispering', and insert a pause after 'ajar'.",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_19427_sad_coral.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_19427_sad_coral.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_19427_sad_coral.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_19427_sad_coral.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_19427_sad_coral.wav"
+    }
+  },
+  {
+    "id": 18,
+    "key": "home_gpt4o_16368_angry_ash",
+    "emotion": "angry",
+    "text": "The sun’s harsh glare glinted off the metal, uncompromising and relentless.",
+    "style_prompt": "Speak with a Angry emotion at a fast speed and high pitch. Specifically, stress the word 'harsh', stress the word 'uncompromising', and stress the word 'relentless'.",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_16368_angry_ash.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_16368_angry_ash.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_16368_angry_ash.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_16368_angry_ash.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_16368_angry_ash.wav"
+    }
+  },
+  {
+    "id": 19,
+    "key": "home_gpt4o_2390_sad_ash",
+    "emotion": "sad",
+    "text": "The echoes faded, leaving nothing but the whisper of my sigh.",
+    "style_prompt": "Speak with a Sad emotion at a slow speed and low pitch. Specifically, stress the word 'faded', stress the word 'whisper', and insert a pause after 'faded'.",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_2390_sad_ash.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_2390_sad_ash.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_2390_sad_ash.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_2390_sad_ash.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_2390_sad_ash.wav"
+    }
+  },
+  {
+    "id": 20,
+    "key": "home_gpt4o_523_angry_ash",
+    "emotion": "angry",
+    "text": "The car door slammed shut, punctuating the end of the argument.",
+    "style_prompt": "Speak with a Angry emotion at a moderate speed and moderate pitch. Specifically, stress the word 'slammed', stress the word 'punctuating', and insert a pause after 'shut'.",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_523_angry_ash.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_523_angry_ash.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_523_angry_ash.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_523_angry_ash.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_523_angry_ash.wav"
+    }
+  },
+  {
+    "id": 21,
+    "key": "home_gpt4o_9472_happy_sage",
+    "emotion": "happy",
+    "text": "A brisk breeze carries the scent of pine and earth, invigorating and fresh.",
+    "style_prompt": "Speak with a Happy emotion at a moderate speed and high pitch. Specifically, stress the word 'brisk', stress the word 'invigorating', and stress the word 'fresh'.",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_9472_happy_sage.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_9472_happy_sage.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_9472_happy_sage.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_9472_happy_sage.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_9472_happy_sage.wav"
+    }
+  },
+  {
+    "id": 22,
+    "key": "home_gpt4o_14107_fearful_coral",
+    "emotion": "fearful",
+    "text": "Every rustle from the trees seemed to whisper her name.",
+    "style_prompt": "Speak with a Fearful emotion at a moderate speed and high pitch. Specifically, stress the word 'rustle', stress the word 'whisper', and stress the word 'name'.",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_14107_fearful_coral.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_14107_fearful_coral.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_14107_fearful_coral.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_14107_fearful_coral.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_14107_fearful_coral.wav"
+    }
+  },
+  {
+    "id": 23,
+    "key": "home_gpt4o_4897_disgusted_sage",
+    "emotion": "disgusted",
+    "text": "The silence in the house was heavy after the argument.",
+    "style_prompt": "Speak with a Disgusted emotion at a slow speed and low pitch. Specifically, stress the word 'silence', stress the word 'heavy', and insert a pause after 'house'.",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_4897_disgusted_sage.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_4897_disgusted_sage.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_4897_disgusted_sage.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_4897_disgusted_sage.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_4897_disgusted_sage.wav"
+    }
+  },
+  {
+    "id": 24,
+    "key": "home_gpt4o_18990_sad_ash",
+    "emotion": "sad",
+    "text": "The streets are quiet now, kissed by rain, every droplet a tear shed silently.",
+    "style_prompt": "Speak with a Sad emotion at a moderate speed and moderate pitch. Specifically, stress the word 'quiet', stress the word 'tear', and insert a pause after 'now'.",
+    "systems": {
+      "sys_A": "audio/sys_A/home_gpt4o_18990_sad_ash.wav",
+      "sys_B": "audio/sys_B/home_gpt4o_18990_sad_ash.wav",
+      "sys_C": "audio/sys_C/home_gpt4o_18990_sad_ash.wav",
+      "sys_D": "audio/sys_D/home_gpt4o_18990_sad_ash.wav",
+      "sys_E": "audio/sys_E/home_gpt4o_18990_sad_ash.wav"
+    }
+  },
+  {
+    "id": 25,
+    "key": "102_102_129232_000019_000002",
+    "emotion": "neutral",
+    "text": "But we apply ourselves to the history of its production.",
+    "style_prompt": "Speak at a moderate speed and moderate pitch. Specifically, stress the word 'apply', stress the word 'history', and stress the word 'production'.",
+    "systems": {
+      "sys_A": "audio/sys_A/102_102_129232_000019_000002.wav",
+      "sys_B": "audio/sys_B/102_102_129232_000019_000002.wav",
+      "sys_C": "audio/sys_C/102_102_129232_000019_000002.wav",
+      "sys_D": "audio/sys_D/102_102_129232_000019_000002.wav",
+      "sys_E": "audio/sys_E/102_102_129232_000019_000002.wav"
+    }
+  },
+  {
+    "id": 26,
+    "key": "585_585_294811_000008_000019",
+    "emotion": "neutral",
+    "text": "He would have withdrawn from the feast had not the noise of voices allayed the smart.",
+    "style_prompt": "Speak at a fast speed and moderate pitch. Specifically, stress the word 'withdrawn', stress the word 'allayed', and insert a pause after 'feast'.",
+    "systems": {
+      "sys_A": "audio/sys_A/585_585_294811_000008_000019.wav",
+      "sys_B": "audio/sys_B/585_585_294811_000008_000019.wav",
+      "sys_C": "audio/sys_C/585_585_294811_000008_000019.wav",
+      "sys_D": "audio/sys_D/585_585_294811_000008_000019.wav",
+      "sys_E": "audio/sys_E/585_585_294811_000008_000019.wav"
+    }
+  },
+  {
+    "id": 27,
+    "key": "51_51_121055_000102_000000",
+    "emotion": "neutral",
+    "text": "'Well, do you know if the persons you see there are rich or poor, if their sacks of wheat are not rubies or diamonds?",
+    "style_prompt": "Speak at a moderate speed and moderate pitch. Specifically, stress the word 'know', stress the word 'rich', and stress the word 'poor'.",
+    "systems": {
+      "sys_A": "audio/sys_A/51_51_121055_000102_000000.wav",
+      "sys_B": "audio/sys_B/51_51_121055_000102_000000.wav",
+      "sys_C": "audio/sys_C/51_51_121055_000102_000000.wav",
+      "sys_D": "audio/sys_D/51_51_121055_000102_000000.wav",
+      "sys_E": "audio/sys_E/51_51_121055_000102_000000.wav"
+    }
+  },
+  {
+    "id": 28,
+    "key": "8316_8316_279798_000068_000000",
+    "emotion": "neutral",
+    "text": "'Yes,' said he, 'if it belonged to me only, you should have it.'",
+    "style_prompt": "Speak at a moderate speed and high pitch. Specifically, stress the word 'belonged', stress the word 'only', and insert a pause after 'he'.",
+    "systems": {
+      "sys_A": "audio/sys_A/8316_8316_279798_000068_000000.wav",
+      "sys_B": "audio/sys_B/8316_8316_279798_000068_000000.wav",
+      "sys_C": "audio/sys_C/8316_8316_279798_000068_000000.wav",
+      "sys_D": "audio/sys_D/8316_8316_279798_000068_000000.wav",
+      "sys_E": "audio/sys_E/8316_8316_279798_000068_000000.wav"
+    }
+  },
+  {
+    "id": 29,
+    "key": "4179_4179_20593_000006_000001",
+    "emotion": "neutral",
+    "text": "'We got to take our chances of gettin' by, that's all.",
+    "style_prompt": "Speak at a moderate speed and moderate pitch. Specifically, stress the word 'got', stress the word 'chances', and insert a pause after 'by'.",
+    "systems": {
+      "sys_A": "audio/sys_A/4179_4179_20593_000006_000001.wav",
+      "sys_B": "audio/sys_B/4179_4179_20593_000006_000001.wav",
+      "sys_C": "audio/sys_C/4179_4179_20593_000006_000001.wav",
+      "sys_D": "audio/sys_D/4179_4179_20593_000006_000001.wav",
+      "sys_E": "audio/sys_E/4179_4179_20593_000006_000001.wav"
+    }
+  },
+  {
+    "id": 30,
+    "key": "3274_3274_163518_000028_000001_2",
+    "emotion": "neutral",
+    "text": "Aye, aye! you may hang for all I care, whether you are a ghost or whatever you are.' So he passed on with his ox.",
+    "style_prompt": "Speak at a fast speed. Specifically, stress the word 'hang', stress the word 'care', and stress the word 'ghost'.",
+    "systems": {
+      "sys_A": "audio/sys_A/3274_3274_163518_000028_000001_2.wav",
+      "sys_B": "audio/sys_B/3274_3274_163518_000028_000001_2.wav",
+      "sys_C": "audio/sys_C/3274_3274_163518_000028_000001_2.wav",
+      "sys_D": "audio/sys_D/3274_3274_163518_000028_000001_2.wav",
+      "sys_E": "audio/sys_E/3274_3274_163518_000028_000001_2.wav"
+    }
+  },
+  {
+    "id": 31,
+    "key": "4015_4015_63729_000056_000004_2",
+    "emotion": "neutral",
+    "text": "I am only making it thus bald that you may know and face the worst.'",
+    "style_prompt": "Speak at a slow speed. Specifically, stress the word 'bald', stress the word 'know', and stress the word 'worst'.",
+    "systems": {
+      "sys_A": "audio/sys_A/4015_4015_63729_000056_000004_2.wav",
+      "sys_B": "audio/sys_B/4015_4015_63729_000056_000004_2.wav",
+      "sys_C": "audio/sys_C/4015_4015_63729_000056_000004_2.wav",
+      "sys_D": "audio/sys_D/4015_4015_63729_000056_000004_2.wav",
+      "sys_E": "audio/sys_E/4015_4015_63729_000056_000004_2.wav"
+    }
+  },
+  {
+    "id": 32,
+    "key": "4174_4174_69287_000017_000000",
+    "emotion": "neutral",
+    "text": "Fray Sibyla was about to seat himself without paying any more attention to these protests when his eyes happened to encounter those of the lieutenant.",
+    "style_prompt": "Speak at a slow speed. Specifically, stress the word 'seat', stress the word 'attention', and insert a pause after 'himself'.",
+    "systems": {
+      "sys_A": "audio/sys_A/4174_4174_69287_000017_000000.wav",
+      "sys_B": "audio/sys_B/4174_4174_69287_000017_000000.wav",
+      "sys_C": "audio/sys_C/4174_4174_69287_000017_000000.wav",
+      "sys_D": "audio/sys_D/4174_4174_69287_000017_000000.wav",
+      "sys_E": "audio/sys_E/4174_4174_69287_000017_000000.wav"
+    }
+  },
+  {
+    "id": 33,
+    "key": "1088_1088_134318_000004_000000_2",
+    "emotion": "neutral",
+    "text": "The voice from the hall below was loud and gruff.",
+    "style_prompt": "Speak at a fast speed. Specifically, stress the word 'loud', stress the word 'gruff', and insert a pause after 'below'.",
+    "systems": {
+      "sys_A": "audio/sys_A/1088_1088_134318_000004_000000_2.wav",
+      "sys_B": "audio/sys_B/1088_1088_134318_000004_000000_2.wav",
+      "sys_C": "audio/sys_C/1088_1088_134318_000004_000000_2.wav",
+      "sys_D": "audio/sys_D/1088_1088_134318_000004_000000_2.wav",
+      "sys_E": "audio/sys_E/1088_1088_134318_000004_000000_2.wav"
+    }
+  },
+  {
+    "id": 34,
+    "key": "956_956_157879_000020_000009",
+    "emotion": "neutral",
+    "text": "That's life enough for me at present-no more, no less.",
+    "style_prompt": "Speak at a slow speed. Specifically, stress the word 'life', stress the word 'present', and insert a pause after 'me'.",
+    "systems": {
+      "sys_A": "audio/sys_A/956_956_157879_000020_000009.wav",
+      "sys_B": "audio/sys_B/956_956_157879_000020_000009.wav",
+      "sys_C": "audio/sys_C/956_956_157879_000020_000009.wav",
+      "sys_D": "audio/sys_D/956_956_157879_000020_000009.wav",
+      "sys_E": "audio/sys_E/956_956_157879_000020_000009.wav"
+    }
+  },
+  {
+    "id": 35,
+    "key": "5044_5044_30602_000045_000000",
+    "emotion": "neutral",
+    "text": "'I don't just understand you, Anne,' he said hesitatingly 'You appear to be vexed about something.'",
+    "style_prompt": "Speak at a low pitch. Specifically, stress the word 'just', stress the word 'vexed', and insert a pause after 'Anne'.",
+    "systems": {
+      "sys_A": "audio/sys_A/5044_5044_30602_000045_000000.wav",
+      "sys_B": "audio/sys_B/5044_5044_30602_000045_000000.wav",
+      "sys_C": "audio/sys_C/5044_5044_30602_000045_000000.wav",
+      "sys_D": "audio/sys_D/5044_5044_30602_000045_000000.wav",
+      "sys_E": "audio/sys_E/5044_5044_30602_000045_000000.wav"
+    }
+  },
+  {
+    "id": 36,
+    "key": "3871_3871_693_000021_000020",
+    "emotion": "neutral",
+    "text": "'Father,' he kept crying, 'dear father, how he insulted you!' And I sobbed too.",
+    "style_prompt": "Speak at a high pitch. Specifically, stress the word 'dear', stress the word 'insulted', and insert a pause after 'Father'.",
+    "systems": {
+      "sys_A": "audio/sys_A/3871_3871_693_000021_000020.wav",
+      "sys_B": "audio/sys_B/3871_3871_693_000021_000020.wav",
+      "sys_C": "audio/sys_C/3871_3871_693_000021_000020.wav",
+      "sys_D": "audio/sys_D/3871_3871_693_000021_000020.wav",
+      "sys_E": "audio/sys_E/3871_3871_693_000021_000020.wav"
+    }
+  },
+  {
+    "id": 37,
+    "key": "2374_2374_155651_000031_000001",
+    "emotion": "neutral",
+    "text": "It was a long knife and many scalps were tied on the handle.",
+    "style_prompt": "Speak at a low pitch. Specifically, stress the word 'long', stress the word 'scalps', and insert a pause after 'knife'.",
+    "systems": {
+      "sys_A": "audio/sys_A/2374_2374_155651_000031_000001.wav",
+      "sys_B": "audio/sys_B/2374_2374_155651_000031_000001.wav",
+      "sys_C": "audio/sys_C/2374_2374_155651_000031_000001.wav",
+      "sys_D": "audio/sys_D/2374_2374_155651_000031_000001.wav",
+      "sys_E": "audio/sys_E/2374_2374_155651_000031_000001.wav"
+    }
+  },
+  {
+    "id": 38,
+    "key": "3780_3780_177788_000018_000000",
+    "emotion": "neutral",
+    "text": "When esther was dressed, she and mrs Saunders knelt down and said a prayer together.",
+    "style_prompt": "Speak at a low pitch. Specifically, stress the word 'knelt', stress the word 'prayer', and insert a pause after 'dressed'.",
+    "systems": {
+      "sys_A": "audio/sys_A/3780_3780_177788_000018_000000.wav",
+      "sys_B": "audio/sys_B/3780_3780_177788_000018_000000.wav",
+      "sys_C": "audio/sys_C/3780_3780_177788_000018_000000.wav",
+      "sys_D": "audio/sys_D/3780_3780_177788_000018_000000.wav",
+      "sys_E": "audio/sys_E/3780_3780_177788_000018_000000.wav"
+    }
+  },
+  {
+    "id": 39,
+    "key": "353_353_128309_000092_000000",
+    "emotion": "neutral",
+    "text": "They began to descend; Monsieur Defarge going first with the lamp, mr Lorry closing the little procession.",
+    "style_prompt": "Speak at a low pitch. Specifically, stress the word 'descend', stress the word 'first', and insert a pause after 'descend'.",
+    "systems": {
+      "sys_A": "audio/sys_A/353_353_128309_000092_000000.wav",
+      "sys_B": "audio/sys_B/353_353_128309_000092_000000.wav",
+      "sys_C": "audio/sys_C/353_353_128309_000092_000000.wav",
+      "sys_D": "audio/sys_D/353_353_128309_000092_000000.wav",
+      "sys_E": "audio/sys_E/353_353_128309_000092_000000.wav"
+    }
+  }
+]
